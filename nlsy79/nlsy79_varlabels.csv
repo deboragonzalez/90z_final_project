@@ -1,0 +1,120 @@
+varname,varlabel
+caseid_1979,id# (1-12686) 79
+hgc_mother_1979,hgc by rs mother 79
+hgc_father_1979,hgc by rs father 79
+fam_27_1979,ichk r and father/step live apart 79
+fam_28a_1979,# of sibs 79
+school_31_1979,hgc r expects 79
+sample_id_1979,sample id  79 int
+hhi_24_1979,version of hh rcv used 79
+sample_race_78scrn,racl/ethnic cohort /scrnr 79
+sample_sex_1979,sex of r 79
+urban_rural_1979,rs current residence urban/rural 79
+ageatint_1979,age of r @ int date 79
+hgcrev79_1979,highest grade compltd (rev) 79
+famsize_1979,family size 79
+tnfi_trunc_1979,tot net family inc p-c yr 79
+hhi_24_1980,version of hh rcv used 80
+famsize_1980,family size 80
+tnfi_trunc_1980,tot net family inc p-c yr 80
+hgcrev80_1980,highest grade compltd (rev) 80
+afqt_3_1981,profiles afqt prctile 2006 (rev) 81
+tnfi_trunc_1981,tot net family inc p-c yr 81
+hgcrev81_1981,highest grade compltd (rev) 81
+famsize_1981,family size 81
+hhi_24_1982,version of hh rcv used 82
+famsize_1982,family size 82
+hgcrev82_1982,highest grade compltd (rev) 82
+tnfi_trunc_1982,tot net family inc p-c yr 82
+hhi_24_1983,version of hh rcv used 83
+famsize_1983,family size 83
+tnfi_trunc_1983,tot net family inc p-c yr 83
+hgcrev83_1983,highest grade compltd (rev) 83
+hhi_24_1984,version of hh rcv used 84
+famsize_1984,family size 84
+tnfi_trunc_1984,tot net family inc p-c yr 84
+hgcrev84_1984,highest grade compltd (rev) 84
+hhi_24_1985,version of hh rcv used 85
+famsize_1985,family size 85
+tnfi_trunc_1985,tot net family inc p-c yr 85
+hgcrev85_1985,highest grade compltd (rev) 85
+hhi_24_1986,version of hh rcv used 86
+famsize_1986,family size 86
+tnfi_trunc_1986,tot net family inc p-c yr 86
+hgcrev86_1986,highest grade compltd (rev) 86
+famsize_1987,family size 87
+tnfi_trunc_1987,tot net family inc p-c yr 87
+hgcrev87_1987,highest grade compltd (rev) 87
+q3_10b_1988,highest dgr rcvd 88
+famsize_1988,family size 88
+tnfi_trunc_1988,tot net family inc p-c yr 88
+hgcrev88_1988,highest grade compltd (rev) 88
+q3_10b_1989,highest dgr rcvd 89
+famsize_1989,family size 89
+tnfi_trunc_1989,tot net family inc p-c yr 89
+hgcrev89_1989,highest grade compltd (rev) 89
+q3_10b_1990,highest dgr rcvd 90
+famsize_1990,family size 90
+tnfi_trunc_1990,tot net family inc p-c yr 90
+hgcrev90_1990,highest grade compltd (rev) 90
+q3_10b_1991,highest dgr rcvd 91
+famsize_1991,family size 91
+tnfi_trunc_1991,tot net family inc p-c yr 91
+hgcrev91_1991,highest grade compltd (rev) 91
+q3_10b_1992,highest dgr rcvd 92
+famsize_1992,family size 92
+tnfi_trunc_1992,tot net family inc p-c yr 92
+hgcrev92_1992,highest grade compltd (rev) 92
+q3_10b_1993,name of highest degree ever  recd 93
+famsize_1993,family size 93
+tnfi_trunc_1993,total net family income 93
+hgcrev93_1993,highest grade compltd (rev) 93
+q3_10b_1994,name of highest degree ever  recd 94
+famsize_1994,family size 94
+tnfi_trunc_1994,total net family income 94
+hgcrev94_1994,highest grade compltd (rev) 94
+famsize_1996,family size 96
+tnfi_trunc_1996,total net family income 96
+hgcrev96_1996,highest grade compltd (rev) 96
+q3_10b_1996,name of highest degree ever recd 96
+q3_10b_1998,name of highest degree ever  recd 1998
+famsize_1998,family size 1998
+tnfi_trunc_1998,total net family income 1998
+hgcrev98_1998,highest grade compltd (rev) 1998
+q3_10b_2000,name of highest degree ever  recd 2000
+famsize_2000,family size 2000
+tnfi_trunc_2000,total net family income 2000
+hgcrev00_2000,highest grade compltd (rev) 2000
+q3_10b_2002,name of highest degree ever  recd 2002
+famsize_2002,family size 2002
+tnfi_trunc_2002,total net family income 2002
+hgcrev02_2002,highest grade compltd (rev) 2002
+q3_10b_2004,name of highest degree ever  recd 2004
+famsize_2004,family size 2004
+tnfi_trunc_2004,total net family income 2004
+hgcrev04_2004,highest grade compltd (rev) 2004
+q3_10b_2006,name of highest degree ever  recd 2006
+famsize_2006,family size 2006
+tnfi_trunc_2006,total net family income 2006
+hgcrev06_2006,highest grade compltd (rev) 2006
+q3_10b_2008,name of highest degree ever recd 2008
+famsize_2008,family size 2008
+tnfi_trunc_2008,total net family income 2008
+hgcrev08_2008,highest grade compltd (rev) 2008
+q3_10b_2010,name of highest degree ever  recd 2010
+famsize_2010,family size 2010
+tnfi_trunc_2010,total net family income 2010
+hgcrev10_2010,highest grade compltd (rev) 2010
+q3_10b_2012,name of highest degree ever  recd 2012
+famsize_2012,family size 2012
+tnfi_trunc_2012,total net family income 2012
+hgcrev12_2012,highest grade compltd (rev) 2012
+q3_10b_2014,name of highest degree ever  recd 2014
+famsize_2014,family size 2014
+tnfi_trunc_2014,total net family income 2014
+hgcrev14_2014,highest grade compltd (rev) 2014
+q3_10b_2016,name of highest degree ever  recd 2016
+famsize_2016,family size 2016
+tnfi_trunc_2016,total net family income 2016
+hgcrev16_2016,highest grade compltd (rev) 2016
+sampweight_1979,sampling weight 79
