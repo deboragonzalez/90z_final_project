@@ -1,0 +1,89 @@
+---
+title: 'Invest in Women'
+subtitle: 'How A Mother''s Education Affect Her Children''s Future'
+author: "Debora Gonzalez"
+date: "4/24/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(rstanarm)
+library(Hmisc)
+library(stargazer)
+
+```
+
+\newpage
+# Background Overview
+
+### Understanding the associations between a mother's education and her children's social and economic mobility
+
+According to Time Magazine, women are the majority of the U.S. laborforce with the healthcare and retail industries being the leaders in female employment. Experts argue that the high numbers of female employees in these industries is tied to the demand "from economically-empowered female consumers" who benefit from these same industries. This does not mean that women across all age-groups are involved in the work-force at high rates. In fact, at ages 25-54 (which is considered prime working age) the civilian workforce participation rate was 76.8% for women while that of men was 89.2% as of Dec. 2019. Women also tend to hold low-paying or part-time positions like assistant, home health aides, maids, etc. Despite these trends, women have had very high education mobility compared to men. Notably, this seemingly radical mobility is largely due to the rapid increase in coed colleges and the establishment of universal education in the U.S. Regardless of how it happened, the Bureau of Labor Statistics affirms that the educational attainment of women of prime working age saw a dramatic increase from 1970 to 2016:
+
+
+<body>
+    <blockquote cite="https://www.bls.gov/opub/ted/2017/a-look-at-womens-education-and-earnings-since-the-1970s.htm">
+      "In 2016, 42 percent of these women held a Bachelor’s degree and higher, compared with 11 percent in 1970. In 2016, 6 percent of women had less than a high school diploma—that is, did not graduate from high school or earn a GED—down from 34 percent in 1970."
+    </blockquote>
+</body>
+
+
+These amazing statistics highlight an interesting question about the effect of a mother's education on her child's educational and financial outcomes. If women are such a relevant part of the workforce, how do they affect their children's mobility? How is their education level relevant to that of their children? How does a woman's social class affect her son's or daughter's outcomes differently? Because women in the U.S. are no longer (purely) defined by a husband's social or class status, it may be interesting to explore how their level of education and social class affect their children's outcomes. Beller (2009) in the article "Bringing Intergenerational Social Mobility Research into the Twenty-first Century: Why Mothers Matter," challenges the standard of inequality and social mobility research, wherein mothers' background or economic participation is neither common nor important. Beller argues that "models that incorporate both mothers' and fathers' characteristics into class origin measures" provide a better fit than conventional models for both men and women.
+
+\newpage
+# Research Question
+
+
+Inspired by Beller (2009), I would like to take a look at the ways in which educational attainment and/or social class of mothers affect(s) their children's outcomes. I hope to construct a few models to explore these main questions:
+
+(a) Overall, to what extent does mother's education matter for a child's socioeconomic status? How does it compare to father's education? 
+(b)Overall, to what extent does mother's education matter for a child's education outcome? How does it compare to father's education? 
+(c) For whom does mother's education matter most? Sons? Daughters? Children raised in single-mother households? Or only daughters raised in single-mother households?
+
+
+To explore these questions I am building models that explore the association between a mother's education and her children's outcome and introducing controls such as father's education, college completion, parental family income, parental family income quantile, child's sex, etc. Ideally, I will be able to observe how the mother's education affect her child's educational and financial outcome as a whole and also when controlling for some of these other factors. I may put special emphasis in the relationship mothers have to daughters outcomes versus that of sons in different family structures, and theorize the reasons behind any patterns I may find. Ultimately, the purpose of this project is to explore the ways in which women influence social mobility for future generations.
+
+\newpage
+
+# Data & Methods
+
+This project will use the National Longitudinal Survey (1979 cohort) to explore the role of mothers in the social and economic mobility of their children.
+
+\newpage
+# Analysis
+
+```{r data setup, include = FALSE}
+
+load("nlsy79.RData")
+
+
+dataset1 <- nlsy79 %>% 
+  
+#  select(hgc_mother_1979, hgc_father_1979, sample_sex_1979, tnfi_trunc_1979,
+#  tnfi_trunc_2016, sampweight_1979, hgcrev90_1990, hgcrev90_1989,
+#  hgcrev90_1988, hgcrev90_1987, hgcrev90_1986) %>%
+  
+  mutate(hgc_age25 = case_when(age_1979 == 14 ~ hgc_1990,
+                               age_1979 == 15 ~ hgc_1989,
+                               age_1979 == 16 ~ hgc_1988,
+                               age_1979 == 17 ~ hgc_1987,
+                               age_1979 == 18 ~ hgc_1986))
+#  filter(tnfi_trunc_2016 > 0) %>% 
+#  mutate(logfaminc16 = log(tnfi_trunc_2016))
+
+```
+
+
+# Conclusions
+
+### References
+
+Beller, E. (2009). Bringing Intergenerational Social Mobility Research into the Twenty-first Century: Why Mothers Matter. American Sociological Review, 74(4), 507–528. https://doi.org/10.1177/000312240907400401.
+
+Bureau of Labor Statistics, U.S. Department of Labor, The Economics Daily, A look at women’s education and earnings since the 1970s on the Internet at https://www.bls.gov/opub/ted/2017/a-look-at-womens-education-and-earnings-since-the-1970s.htm.
+
+Law, Tara. "Women Are Now the Majority of the U.S. Workforce — But Working Women Still Face Serious Challenges" <i>Time Magazine - Business & Economics </i> (Jan. 2020) https://time.com/5766787/women-workforce/.
+

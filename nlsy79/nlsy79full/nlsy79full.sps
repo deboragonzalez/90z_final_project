@@ -1,0 +1,7880 @@
+file handle pcdat/name='nlsy79full.dat' /lrecl=1230.
+data list file pcdat free /
+  R0000100 (F5)
+  R0006500 (F2)
+  R0007900 (F2)
+  R0008500 (F2)
+  R0009100 (F2)
+  R0017200 (F2)
+  R0023500 (F2)
+  R0153710 (F2)
+  R0173600 (F2)
+  R0187900 (F2)
+  R0214700 (F2)
+  R0214800 (F2)
+  R0215100 (F2)
+  R0216100 (F7)
+  R0216500 (F2)
+  R0216601 (F2)
+  R0216701 (F2)
+  R0217502 (F2)
+  R0217900 (F5)
+  R0217910 (F2)
+  R0229100 (F2)
+  R0297300 (F2)
+  R0297400 (F2)
+  R0298000 (F2)
+  R0402700 (F2)
+  R0405210 (F2)
+  R0406010 (F5)
+  R0406100 (F2)
+  R0406401 (F2)
+  R0406501 (F2)
+  R0417300 (F2)
+  R0419800 (F2)
+  R0419900 (F2)
+  R0420100 (F2)
+  R0602400 (F2)
+  R0618301 (F6)
+  R0618410 (F5)
+  R0618500 (F2)
+  R0618901 (F2)
+  R0619001 (F2)
+  R0647103 (F2)
+  R0664400 (F2)
+  R0667400 (F2)
+  R0667500 (F2)
+  R0667700 (F2)
+  R0782101 (F5)
+  R0816400 (F2)
+  R0828300 (F2)
+  R0896710 (F2)
+  R0898201 (F2)
+  R0898301 (F2)
+  R0898600 (F5)
+  R0898700 (F2)
+  R0905800 (F2)
+  R0908100 (F2)
+  R0908200 (F2)
+  R0908400 (F2)
+  R1024001 (F5)
+  R1024301 (F5)
+  R1075600 (F2)
+  R1144410 (F2)
+  R1144500 (F5)
+  R1144600 (F2)
+  R1145001 (F2)
+  R1145101 (F2)
+  R1205700 (F2)
+  R1214300 (F2)
+  R1214400 (F2)
+  R1214600 (F2)
+  R1410701 (F5)
+  R1451300 (F2)
+  R1519610 (F2)
+  R1519700 (F5)
+  R1519800 (F2)
+  R1520201 (F2)
+  R1520301 (F2)
+  R1605000 (F2)
+  R1778501 (F5)
+  R1778801 (F6)
+  R1798500 (F2)
+  R1890210 (F2)
+  R1890400 (F6)
+  R1890500 (F2)
+  R1890901 (F2)
+  R1891001 (F2)
+  R1905500 (F2)
+  R2141601 (F5)
+  R2141901 (F5)
+  R2160100 (F2)
+  R2257410 (F2)
+  R2257500 (F6)
+  R2257600 (F2)
+  R2258001 (F2)
+  R2258101 (F2)
+  R2306400 (F2)
+  R2350301 (F5)
+  R2350601 (F5)
+  R2444610 (F2)
+  R2444700 (F6)
+  R2444900 (F2)
+  R2445401 (F2)
+  R2445501 (F2)
+  R2508900 (F2)
+  R2509800 (F2)
+  R2510000 (F2)
+  R2722501 (F5)
+  R2722801 (F5)
+  R2870110 (F2)
+  R2870200 (F6)
+  R2870400 (F2)
+  R2871101 (F2)
+  R2871201 (F2)
+  R2908000 (F2)
+  R2909100 (F2)
+  R2909200 (F2)
+  R2909400 (F2)
+  R2971401 (F5)
+  R2971701 (F5)
+  R3073910 (F2)
+  R3074000 (F7)
+  R3074100 (F2)
+  R3074801 (F2)
+  R3074901 (F2)
+  R3110100 (F2)
+  R3111100 (F2)
+  R3111200 (F2)
+  R3111400 (F2)
+  R3279401 (F5)
+  R3279701 (F5)
+  R3400600 (F2)
+  R3400700 (F6)
+  R3400800 (F2)
+  R3401501 (F2)
+  R3401601 (F2)
+  R3510100 (F2)
+  R3511100 (F2)
+  R3511200 (F2)
+  R3511400 (F2)
+  R3559001 (F5)
+  R3559301 (F6)
+  R3656000 (F2)
+  R3656100 (F6)
+  R3656200 (F2)
+  R3656901 (F2)
+  R3657001 (F2)
+  R3710100 (F2)
+  R3711100 (F2)
+  R3711200 (F2)
+  R3711400 (F2)
+  R3897101 (F5)
+  R3897401 (F6)
+  R4006500 (F2)
+  R4006600 (F6)
+  R4006700 (F2)
+  R4007401 (F2)
+  R4007501 (F2)
+  R4137800 (F2)
+  R4138800 (F2)
+  R4138900 (F2)
+  R4139001 (F2)
+  R4295101 (F6)
+  R4295501 (F6)
+  R4417600 (F2)
+  R4417700 (F6)
+  R4417800 (F2)
+  R4418501 (F2)
+  R4418601 (F2)
+  R4526400 (F2)
+  R4527500 (F2)
+  R4527600 (F2)
+  R4527701 (F4)
+  R4982801 (F6)
+  R4983201 (F6)
+  R5080600 (F2)
+  R5080700 (F6)
+  R5080800 (F2)
+  R5103900 (F2)
+  R5104000 (F2)
+  R5165900 (F2)
+  R5166000 (F6)
+  R5166100 (F2)
+  R5166901 (F2)
+  R5166902 (F2)
+  R5221700 (F2)
+  R5222800 (F2)
+  R5222900 (F2)
+  R5223001 (F4)
+  R5626201 (F6)
+  R5626601 (F6)
+  R5821700 (F2)
+  R5822700 (F2)
+  R5822800 (F2)
+  R5822901 (F4)
+  R6364601 (F6)
+  R6365001 (F6)
+  R6478600 (F2)
+  R6478700 (F6)
+  R6478800 (F2)
+  R6479600 (F2)
+  R6479700 (F2)
+  R6540300 (F2)
+  R6541300 (F2)
+  R6541400 (F2)
+  R6541501 (F4)
+  R6909701 (F6)
+  R6911101 (F6)
+  R7006400 (F2)
+  R7006500 (F6)
+  R7006600 (F2)
+  R7007300 (F2)
+  R7007400 (F2)
+  R7103500 (F2)
+  R7104500 (F2)
+  R7104600 (F2)
+  R7104701 (F4)
+  R7607800 (F6)
+  R7609000 (F6)
+  R7703600 (F2)
+  R7703700 (F6)
+  R7703900 (F2)
+  R7704600 (F2)
+  R7704700 (F2)
+  R7810400 (F2)
+  R7811400 (F2)
+  R7811500 (F2)
+  R7811601 (F4)
+  R8316300 (F6)
+  R8318200 (F6)
+  R8496000 (F2)
+  R8496100 (F6)
+  R8496300 (F2)
+  R8497000 (F2)
+  R8497100 (F2)
+  T0014300 (F2)
+  T0015300 (F2)
+  T0015400 (F2)
+  T0015501 (F4)
+  T0912400 (F6)
+  T0913900 (F6)
+  T0987600 (F2)
+  T0987800 (F6)
+  T0987900 (F2)
+  T0988800 (F2)
+  T0988900 (F2)
+  T1214200 (F2)
+  T1215300 (F2)
+  T1215400 (F2)
+  T1215501 (F4)
+  T1215600 (F2)
+  T1215701 (F4)
+  T2076700 (F6)
+  T2078800 (F6)
+  T2209900 (F2)
+  T2210000 (F6)
+  T2210100 (F2)
+  T2210700 (F2)
+  T2272700 (F2)
+  T2273800 (F2)
+  T2273900 (F2)
+  T2274001 (F4)
+  T2274100 (F2)
+  T2274201 (F4)
+  T3045300 (F6)
+  T3047500 (F6)
+  T3107700 (F2)
+  T3107800 (F6)
+  T3108000 (F2)
+  T3108600 (F2)
+  T3212800 (F2)
+  T3213900 (F2)
+  T3214000 (F2)
+  T3214101 (F4)
+  T3214200 (F2)
+  T3214301 (F4)
+  T3977400 (F6)
+  T3979400 (F6)
+  T4112200 (F2)
+  T4112300 (F6)
+  T4112500 (F2)
+  T4113100 (F2)
+  T4201000 (F2)
+  T4202100 (F2)
+  T4202200 (F2)
+  T4202301 (F4)
+  T4202500 (F2)
+  T4202601 (F4)
+  T4915800 (F6)
+  T4917800 (F6)
+  T5022500 (F2)
+  T5022600 (F6)
+  T5022800 (F2)
+  T5023500 (F2)
+  T5176000 (F2)
+  T5177100 (F2)
+  T5177200 (F2)
+  T5177301 (F4)
+  T5177500 (F2)
+  T5177601 (F4)
+  T5619500 (F6)
+  T5621700 (F6)
+  T5770700 (F2)
+  T5770800 (F6)
+  T5770900 (F2)
+  T5771400 (F2)
+.
+* The following code works with current versions of SPSS.
+missing values all (-5 thru -1).
+* older versions of SPSS may require this:
+* recode all (-5,-3,-2,-1=-4).
+* missing values all (-4).
+variable labels
+  R0000100  "ID# (1-12686) 79"
+  R0006500  "HGC BY RS MOTHER 79"
+  R0007900  "HGC BY RS FATHER 79"
+  R0008500  "ICHK R AND FATHER/STEP LIVE APART 79"
+  R0009100  "# OF SIBS 79"
+  R0017200  "HIGHEST GRD ATND 79"
+  R0023500  "HGC R EXPECTS 79"
+  R0153710  "ROTTER SCALE SCORE 79"
+  R0173600  "SAMPLE ID  79 INT"
+  R0187900  "VERSION OF HH RCV USED 79"
+  R0214700  "RACL/ETHNIC COHORT /SCRNR 79"
+  R0214800  "SEX OF R 79"
+  R0215100  "RS CURRENT RESIDENCE URBAN/RURAL 79"
+  R0216100  "SAMPLING WEIGHT 79"
+  R0216500  "AGE OF R @ INT DATE 79"
+  R0216601  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 79"
+  R0216701  "HIGHEST GRADE COMPLTD (REV) 79"
+  R0217502  "FAMILY SIZE 79"
+  R0217900  "TOT NET FAMILY INC P-C YR 79"
+  R0217910  "POVERTY STATUS 79"
+  R0229100  "HIGHEST GRD ATND 80"
+  R0297300  "RCVD ANY DEG/CERT SIN LINT 80"
+  R0297400  "TYPE 1ST DGR RCVD LINT 80"
+  R0298000  "TYPE 2ND DGR RCVD LINT 80"
+  R0402700  "VERSION OF HH RCV USED 80"
+  R0405210  "FAMILY SIZE 80"
+  R0406010  "TOT NET FAMILY INC P-C YR 80"
+  R0406100  "POVERTY STATUS 80"
+  R0406401  "HIGHEST GRADE COMPLTD (REV) 80"
+  R0406501  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 80"
+  R0417300  "HIGHEST GRD ATND 81"
+  R0419800  "RCVD ANY DEG/CERT SIN LINT 81"
+  R0419900  "TYPE 1ST DGR RCVD LINT 81"
+  R0420100  "TYPE 2ND DGR RCVD LINT 81"
+  R0602400  "VERSION OF HH RCV LINT 81"
+  R0618301  "PROFILES AFQT PRCTILE 2006 (REV) 81"
+  R0618410  "TOT NET FAMILY INC P-C YR 81"
+  R0618500  "POVERTY STATUS 81"
+  R0618901  "HIGHEST GRADE COMPLTD (REV) 81"
+  R0619001  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 81"
+  R0647103  "FAMILY SIZE 81"
+  R0664400  "HIGHEST GRD ATND 82"
+  R0667400  "RCVD ANY DEG/CERT SIN LINT 82"
+  R0667500  "TYPE 1ST DGR RCVD LINT 82"
+  R0667700  "TYPE 2ND DGR RCVD LINT 82"
+  R0782101  "TOT INC WAGES AND SALRY P-C YR 82 (TRUNC)"
+  R0816400  "VERSION OF HH RCV LINT 82"
+  R0828300  "VERSION OF HH RCV USED 82"
+  R0896710  "FAMILY SIZE 82"
+  R0898201  "HIGHEST GRADE COMPLTD (REV) 82"
+  R0898301  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 82"
+  R0898600  "TOT NET FAMILY INC P-C YR 82"
+  R0898700  "POVERTY STATUS 82"
+  R0905800  "HIGHEST GRD ATND 83"
+  R0908100  "RCVD ANY DEG/CERT SIN LINT 83"
+  R0908200  "TYPE 1ST DGR RCVD LINT 83"
+  R0908400  "TYPE 2ND DGR RCVD LINT 83"
+  R1024001  "TOT INC WAGES AND SALRY P-C YR 83 (TRUNC)"
+  R1024301  "TOT INC FARM/BUSNS P-C YR 83 (TRUNC)"
+  R1075600  "VERSION OF HH RCV USED 83"
+  R1144410  "FAMILY SIZE 83"
+  R1144500  "TOT NET FAMILY INC P-C YR 83"
+  R1144600  "POVERTY STATUS 83"
+  R1145001  "HIGHEST GRADE COMPLTD (REV) 83"
+  R1145101  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 83"
+  R1205700  "HIGHEST GRD ATND 84"
+  R1214300  "RCVD ANY DEG/CERT SIN LINT 84"
+  R1214400  "TYPE 1ST DGR RCVD LINT 84"
+  R1214600  "TYPE 2ND DGR RCVD LINT 84"
+  R1410701  "TOT INC WAGES AND SALRY P-C YR 84 (TRUNC)"
+  R1451300  "VERSION OF HH RCV USED 84"
+  R1519610  "FAMILY SIZE 84"
+  R1519700  "TOT NET FAMILY INC P-C YR 84"
+  R1519800  "POVERTY STATUS 84"
+  R1520201  "HIGHEST GRADE COMPLTD (REV) 84"
+  R1520301  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 84"
+  R1605000  "HIGHEST GRD ATND 85"
+  R1778501  "TOT INC WAGES AND SALRY P-C YR 85 (TRUNC)"
+  R1778801  "TOT INC FARM/BUSNS P-C YR 85 (TRUNC)"
+  R1798500  "VERSION OF HH RCV USED 85"
+  R1890210  "FAMILY SIZE 85"
+  R1890400  "TOT NET FAMILY INC P-C YR 85"
+  R1890500  "POVERTY STATUS 85"
+  R1890901  "HIGHEST GRADE COMPLTD (REV) 85"
+  R1891001  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 85"
+  R1905500  "HIGHEST GRD ATND 86"
+  R2141601  "TOT INC WAGES AND SALRY P-C YR 86 (TRUNC)"
+  R2141901  "TOT INC FARM/BUSNS P-C YR 86 (TRUNC)"
+  R2160100  "VERSION OF HH RCV USED 86"
+  R2257410  "FAMILY SIZE 86"
+  R2257500  "TOT NET FAMILY INC P-C YR 86"
+  R2257600  "POVERTY STATUS 86"
+  R2258001  "HIGHEST GRADE COMPLTD (REV) 86"
+  R2258101  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 86"
+  R2306400  "HIGHEST GRD ATND 87"
+  R2350301  "TOT INC WAGES AND SALRY P-C YR 87 (TRUNC)"
+  R2350601  "TOT INC FARM/BUSNS P-C YR 87 (TRUNC)"
+  R2444610  "FAMILY SIZE 87"
+  R2444700  "TOT NET FAMILY INC P-C YR 87"
+  R2444900  "POVERTY STATUS 87"
+  R2445401  "HIGHEST GRADE COMPLTD (REV) 87"
+  R2445501  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 87"
+  R2508900  "HIGHEST GRD ATND 88"
+  R2509800  "HIGHEST DGR RCVD 88"
+  R2510000  "YR R COMPLETED HIGHEST DGR 88"
+  R2722501  "TOT INC WAGES AND SALRY P-C YR 88 (TRUNC)"
+  R2722801  "TOT INC FARM/BUSNS P-C YR 88 (TRUNC)"
+  R2870110  "FAMILY SIZE 88"
+  R2870200  "TOT NET FAMILY INC P-C YR 88"
+  R2870400  "POVERTY STATUS 88"
+  R2871101  "HIGHEST GRADE COMPLTD (REV) 88"
+  R2871201  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 88"
+  R2908000  "HIGHEST GRD ATND 89"
+  R2909100  "RCVD DGR SIN LINT 89"
+  R2909200  "HIGHEST DGR RCVD 89"
+  R2909400  "YR R COMPLETED HIGHEST DGR 89"
+  R2971401  "TOT INC WAGES AND SALRY P-C YR 89 (TRUNC)"
+  R2971701  "TOT INC FARM/BUSNS P-C YR 89 (TRUNC)"
+  R3073910  "FAMILY SIZE 89"
+  R3074000  "TOT NET FAMILY INC P-C YR 89"
+  R3074100  "POVERTY STATUS 89"
+  R3074801  "HIGHEST GRADE COMPLTD (REV) 89"
+  R3074901  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 89"
+  R3110100  "HIGHEST GRD ATND 90"
+  R3111100  "RCVD DGR SIN LINT 90"
+  R3111200  "HIGHEST DGR RCVD 90"
+  R3111400  "YR R COMPLETED HIGHEST DGR 90"
+  R3279401  "TOT INC WAGES AND SALRY P-C YR 90 (TRUNC)"
+  R3279701  "TOT INC FARM/BUSNS P-C YR 90 (TRUNC)"
+  R3400600  "FAMILY SIZE 90"
+  R3400700  "TOT NET FAMILY INC P-C YR 90"
+  R3400800  "POVERTY STATUS 90"
+  R3401501  "HIGHEST GRADE COMPLTD (REV) 90"
+  R3401601  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 90"
+  R3510100  "HIGHEST GRD ATND 91"
+  R3511100  "RCVD DGR SIN LINT 91"
+  R3511200  "HIGHEST DGR RCVD 91"
+  R3511400  "YR R COMPLETED HIGHEST DGR 91"
+  R3559001  "TOT INC WAGES AND SALRY P-C YR 91"
+  R3559301  "TOT INC FARM/BUSNS P-C YR 91 (TRUNC)"
+  R3656000  "FAMILY SIZE 91"
+  R3656100  "TOT NET FAMILY INC P-C YR 91"
+  R3656200  "POVERTY STATUS 91"
+  R3656901  "HIGHEST GRADE COMPLTD (REV) 91"
+  R3657001  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 91"
+  R3710100  "HIGHEST GRD ATND 92"
+  R3711100  "RCVD DGR SIN LINT 92"
+  R3711200  "HIGHEST DGR RCVD 92"
+  R3711400  "YR R COMPLETED HIGHEST DGR 92"
+  R3897101  "TOT INC WAGES AND SALRY P-C YR 92 (TRUNC)"
+  R3897401  "TOT INC FARM/BUSNS P-C YR 92 (TRUNC)"
+  R4006500  "FAMILY SIZE 92"
+  R4006600  "TOT NET FAMILY INC P-C YR 92"
+  R4006700  "POVERTY STATUS 92"
+  R4007401  "HIGHEST GRADE COMPLTD (REV) 92"
+  R4007501  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 92"
+  R4137800  "HGHST GRADE OF REG SCH. R ATTENDED 93"
+  R4138800  "RECEIVED ANY DEGREE SINCE DLI 93"
+  R4138900  "NAME OF HIGHEST DEGREE EVER  RECD 93"
+  R4139001  "YEAR R COMPLETED HIGHEST DEGREE 93"
+  R4295101  "AMT OF R'S WAGES/SALARY/TIPS (PCY) 93 (TRUNC)"
+  R4295501  "AMT FRM FARM-BUSNS AFT EXP (R-PCY) 93 (TRUNC)"
+  R4417600  "FAMILY SIZE 93"
+  R4417700  "TOTAL NET FAMILY INCOME 93"
+  R4417800  "POVERTY STATUS 93"
+  R4418501  "HIGHEST GRADE COMPLTD (REV) 93"
+  R4418601  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 93"
+  R4526400  "HGHST GRADE OF REG SCH. R ATTENDED 94"
+  R4527500  "RECEIVED ANY DEGREE SINCE DLI 94"
+  R4527600  "NAME OF HIGHEST DEGREE EVER  RECD 94"
+  R4527701  "YEAR R COMPLETED HIGHEST DEGREE 94"
+  R4982801  "AMT OF R'S WAGES/SALARY/TIPS (PCY) 94"
+  R4983201  "AMT FRM FARM-BUSNS AFT EXP (R-PCY) 94"
+  R5080600  "FAMILY SIZE 94"
+  R5080700  "TOTAL NET FAMILY INCOME 94"
+  R5080800  "POVERTY STATUS 94"
+  R5103900  "HIGHEST GRADE COMPLTD (REV) 94"
+  R5104000  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 94"
+  R5165900  "FAMILY SIZE 96"
+  R5166000  "TOTAL NET FAMILY INCOME 96"
+  R5166100  "POVERTY STATUS 96"
+  R5166901  "HIGHEST GRADE COMPLTD (REV) 96"
+  R5166902  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 96"
+  R5221700  "HGHST GRADE OF REG SCH. R ATTENDED 96"
+  R5222800  "RECEIVED ANY DEGREE SINCE DLI 96"
+  R5222900  "NAME OF HIGHEST DEGREE EVER RECD 96"
+  R5223001  "YEAR R COMPLETED HIGHEST DEGREE 96"
+  R5626201  "AMT OF R'S WAGES/SALARY/TIPS (PCY) 96"
+  R5626601  "AMT FRM FARM-BUSNS AFT EXP (R-PCY) 96"
+  R5821700  "HGHST GRADE OF REG SCH. R ATTENDED 1998"
+  R5822700  "RECEIVED ANY DEGREE SINCE DLI 1998"
+  R5822800  "NAME OF HIGHEST DEGREE EVER  RECD 1998"
+  R5822901  "YEAR R COMPLETED HIGHEST DEGREE 1998"
+  R6364601  "AMT OF RS WAGES/SALARY/TIPS (PCY) 1998"
+  R6365001  "AMT FRM FARM-BUSNS AFT EXP (R-PCY) 1998"
+  R6478600  "FAMILY SIZE 1998"
+  R6478700  "TOTAL NET FAMILY INCOME 1998"
+  R6478800  "POVERTY STATUS 1998"
+  R6479600  "HIGHEST GRADE COMPLTD (REV) 1998"
+  R6479700  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 1998"
+  R6540300  "HGHST GRADE OF REG SCH. R ATTENDED 2000"
+  R6541300  "RECEIVED ANY DEGREE SINCE DLI 2000"
+  R6541400  "NAME OF HIGHEST DEGREE EVER  RECD 2000"
+  R6541501  "YEAR R COMPLETED HIGHEST DEGREE 2000"
+  R6909701  "AMT OF RS WAGES/SALARY/TIPS (PCY) 2000"
+  R6911101  "AMT FRM FARM-BUSNS AFT EXP (R-PCY) 2000"
+  R7006400  "FAMILY SIZE 2000"
+  R7006500  "TOTAL NET FAMILY INCOME 2000"
+  R7006600  "POVERTY STATUS 2000"
+  R7007300  "HIGHEST GRADE COMPLTD (REV) 2000"
+  R7007400  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 2000"
+  R7103500  "HGHST GRADE OF REG SCH. R ATTENDED 2002"
+  R7104500  "RECEIVED ANY DEGREE SINCE DLI 2002"
+  R7104600  "NAME OF HIGHEST DEGREE EVER  RECD 2002"
+  R7104701  "YEAR R COMPLETED HIGHEST DEGREE 2002"
+  R7607800  "AMT OF RS WAGES/SALARY/TIPS (PCY) 2002"
+  R7609000  "AMT FRM FARM-BUSNS AFT EXP (R-PCY) 2002"
+  R7703600  "FAMILY SIZE 2002"
+  R7703700  "TOTAL NET FAMILY INCOME 2002"
+  R7703900  "POVERTY STATUS 2002"
+  R7704600  "HIGHEST GRADE COMPLTD (REV) 2002"
+  R7704700  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 2002"
+  R7810400  "HGHST GRADE OF REG SCH. R ATTENDED 2004"
+  R7811400  "RECEIVED ANY DEGREE SINCE DLI 2004"
+  R7811500  "NAME OF HIGHEST DEGREE EVER  RECD 2004"
+  R7811601  "YEAR R COMPLETED HIGHEST DEGREE 2004"
+  R8316300  "AMT OF RS WAGES/SALARY/TIPS (PCY) 2004"
+  R8318200  "AMT FRM FARM-BUSNS AFT EXP (R-PCY) 2004"
+  R8496000  "FAMILY SIZE 2004"
+  R8496100  "TOTAL NET FAMILY INCOME 2004"
+  R8496300  "POVERTY STATUS 2004"
+  R8497000  "HIGHEST GRADE COMPLTD (REV) 2004"
+  R8497100  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 2004"
+  T0014300  "HGHST GRADE OF REG SCH. R ATTENDED 2006"
+  T0015300  "RECEIVED ANY DEGREE SINCE DLI 2006"
+  T0015400  "NAME OF HIGHEST DEGREE EVER  RECD 2006"
+  T0015501  "YEAR R COMPLETED HIGHEST DEGREE 2006"
+  T0912400  "AMT OF RS WAGES/SALARY/TIPS (PCY) 2006"
+  T0913900  "AMT FRM FARM-BUSNS AFT EXP (R-PCY) 2006"
+  T0987600  "FAMILY SIZE 2006"
+  T0987800  "TOTAL NET FAMILY INCOME 2006"
+  T0987900  "POVERTY STATUS 2006"
+  T0988800  "HIGHEST GRADE COMPLTD (REV) 2006"
+  T0988900  "ENROLLMT STAT MAY 1 SURVEY YR (REV) 2006"
+  T1214200  "HGHST GRADE OF REG SCH. R ATTENDED 2008"
+  T1215300  "RECEIVED ANY DEGREE SINCE DLI 2008"
+  T1215400  "NAME OF HIGHEST DEGREE EVER RECD 2008"
+  T1215501  "YEAR R RECEIVED HIGHEST DEGREE 2008"
+  T1215600  "NAME OF HIGHEST DEGREE EVER RECEIVED? 2008"
+  T1215701  "YEAR RECEIVED HIGHEST DEGREE EVER 2008"
+  T2076700  "AMT OF RS WAGES/SALARY/TIPS (PCY) 2008"
+  T2078800  "AMT FRM FARM-BUSNS AFT EXP (R-PCY) 2008"
+  T2209900  "FAMILY SIZE 2008"
+  T2210000  "TOTAL NET FAMILY INCOME 2008"
+  T2210100  "POVERTY STATUS 2008"
+  T2210700  "HIGHEST GRADE COMPLTD (REV) 2008"
+  T2272700  "HGHST GRADE OF REG SCH. R ATTENDED 2010"
+  T2273800  "RECEIVED ANY DEGREE SINCE DLI 2010"
+  T2273900  "NAME OF HIGHEST DEGREE EVER  RECD 2010"
+  T2274001  "DATE R COMPLETED HIGHEST DEGREE 2010"
+  T2274100  "NAME OF HIGHEST DEGREE EVER  RECD 2010"
+  T2274201  "DATE R COMPLETED HIGHEST DEGREE 2010"
+  T3045300  "AMT OF RS WAGES/SALARY/TIPS (PCY) 2010"
+  T3047500  "AMT FRM FARM-BUSNS AFT EXP (R-PCY) 2010"
+  T3107700  "FAMILY SIZE 2010"
+  T3107800  "TOTAL NET FAMILY INCOME 2010"
+  T3108000  "POVERTY STATUS 2010"
+  T3108600  "HIGHEST GRADE COMPLTD (REV) 2010"
+  T3212800  "HGHST GRADE OF REG SCH. R ATTENDED 2012"
+  T3213900  "RECEIVED ANY DEGREE SINCE DLI 2012"
+  T3214000  "NAME OF HIGHEST DEGREE EVER  RECD 2012"
+  T3214101  "DATE R COMPLETED HIGHEST DEGREE 2012"
+  T3214200  "NAME OF HIGHEST DEGREE EVER  RECD 2012"
+  T3214301  "DATE R COMPLETED HIGHEST DEGREE 2012"
+  T3977400  "AMT OF RS WAGES/SALARY/TIPS (PCY) 2012"
+  T3979400  "AMT FRM FARM-BUSNS AFT EXP (R-PCY) 2012"
+  T4112200  "FAMILY SIZE 2012"
+  T4112300  "TOTAL NET FAMILY INCOME 2012"
+  T4112500  "POVERTY STATUS 2012"
+  T4113100  "HIGHEST GRADE COMPLTD (REV) 2012"
+  T4201000  "HGHST GRADE OF REG SCH. R ATTENDED 2014"
+  T4202100  "RECEIVED ANY DEGREE SINCE DLI 2014"
+  T4202200  "NAME OF HIGHEST DEGREE EVER  RECD 2014"
+  T4202301  "DATE R COMPLETED HIGHEST DEGREE 2014"
+  T4202500  "NAME OF HIGHEST DEGREE EVER  RECD 2014"
+  T4202601  "DATE R COMPLETED HIGHEST DEGREE 2014"
+  T4915800  "AMT OF RS WAGES/SALARY/TIPS (PCY) 2014"
+  T4917800  "AMT FRM FARM-BUSNS AFT EXP (R-PCY) 2014"
+  T5022500  "FAMILY SIZE 2014"
+  T5022600  "TOTAL NET FAMILY INCOME 2014"
+  T5022800  "POVERTY STATUS 2014"
+  T5023500  "HIGHEST GRADE COMPLTD (REV) 2014"
+  T5176000  "HGHST GRADE OF REG SCH. R ATTENDED 2016"
+  T5177100  "RECEIVED ANY DEGREE SINCE DLI 2016"
+  T5177200  "NAME OF HIGHEST DEGREE EVER  RECD 2016"
+  T5177301  "DATE R COMPLETED HIGHEST DEGREE 2016"
+  T5177500  "NAME OF HIGHEST DEGREE EVER  RECD 2016"
+  T5177601  "DATE R COMPLETED HIGHEST DEGREE 2016"
+  T5619500  "AMT OF RS WAGES/SALARY/TIPS (PCY) 2016"
+  T5621700  "AMT FRM FARM-BUSNS AFT EXP (R-PCY) 2016"
+  T5770700  "FAMILY SIZE 2016"
+  T5770800  "TOTAL NET FAMILY INCOME 2016"
+  T5770900  "POVERTY STATUS 2016"
+  T5771400  "HIGHEST GRADE COMPLTD (REV) 2016"
+.
+
+* Recode continuous values. 
+* recode 
+    / 
+ R0009100 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 99999 eq 16)
+    / 
+ R0153710 
+    (0 thru 0 eq 0)
+    (1 thru 4 eq 1)
+    (5 thru 9 eq 5)
+    (10 thru 14 eq 10)
+    (15 thru 19 eq 15)
+    / 
+ R0216500 
+    (0 thru 13 eq 0)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 16 eq 16)
+    (17 thru 17 eq 17)
+    (18 thru 18 eq 18)
+    (19 thru 19 eq 19)
+    (20 thru 20 eq 20)
+    (21 thru 21 eq 21)
+    (22 thru 22 eq 22)
+    (23 thru 23 eq 23)
+    (24 thru 24 eq 24)
+    (25 thru 25 eq 25)
+    (26 thru 26 eq 26)
+    (27 thru 27 eq 27)
+    (28 thru 28 eq 28)
+    (29 thru 29 eq 29)
+    (30 thru 99999 eq 30)
+    / 
+ R0217502 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 16 eq 16)
+    (17 thru 99999 eq 17)
+    / 
+ R0217900 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R0405210 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 16 eq 16)
+    (17 thru 99999 eq 17)
+    / 
+ R0406010 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R0618410 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R0647103 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 16 eq 16)
+    (17 thru 99999 eq 17)
+    / 
+ R0782101 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R0896710 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 16 eq 16)
+    (17 thru 99999 eq 17)
+    / 
+ R0898600 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R1024001 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R1024301 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R1144410 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 16 eq 16)
+    (17 thru 99999 eq 17)
+    / 
+ R1144500 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R1410701 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R1519610 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 16 eq 16)
+    (17 thru 99999 eq 17)
+    / 
+ R1519700 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R1778501 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R1778801 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R1890210 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 16 eq 16)
+    (17 thru 99999 eq 17)
+    / 
+ R1890400 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R2141601 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R2141901 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R2257410 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 16 eq 16)
+    (17 thru 99999 eq 17)
+    / 
+ R2257500 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R2350301 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R2350601 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R2444610 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 16 eq 16)
+    (17 thru 99999 eq 17)
+    / 
+ R2444700 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R2510000 
+    (0 thru 72 eq 0)
+    (73 thru 73 eq 73)
+    (74 thru 74 eq 74)
+    (75 thru 75 eq 75)
+    (76 thru 76 eq 76)
+    (77 thru 77 eq 77)
+    (78 thru 78 eq 78)
+    (79 thru 79 eq 79)
+    (80 thru 80 eq 80)
+    (81 thru 81 eq 81)
+    (82 thru 82 eq 82)
+    (83 thru 83 eq 83)
+    (84 thru 84 eq 84)
+    (85 thru 85 eq 85)
+    (86 thru 86 eq 86)
+    (87 thru 87 eq 87)
+    (88 thru 88 eq 88)
+    (89 thru 99999 eq 89)
+    / 
+ R2722501 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R2722801 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R2870110 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 16 eq 16)
+    (17 thru 99999 eq 17)
+    / 
+ R2870200 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R2909400 
+    (0 thru 74 eq 0)
+    (75 thru 75 eq 75)
+    (76 thru 76 eq 76)
+    (77 thru 77 eq 77)
+    (78 thru 78 eq 78)
+    (79 thru 79 eq 79)
+    (80 thru 80 eq 80)
+    (81 thru 81 eq 81)
+    (82 thru 82 eq 82)
+    (83 thru 83 eq 83)
+    (84 thru 84 eq 84)
+    (85 thru 85 eq 85)
+    (86 thru 86 eq 86)
+    (87 thru 87 eq 87)
+    (88 thru 88 eq 88)
+    (89 thru 89 eq 89)
+    (90 thru 90 eq 90)
+    (91 thru 99999 eq 91)
+    / 
+ R2971401 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R2971701 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R3073910 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 16 eq 16)
+    (17 thru 99999 eq 17)
+    / 
+ R3074000 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R3111400 
+    (0 thru 78 eq 0)
+    (79 thru 79 eq 79)
+    (80 thru 80 eq 80)
+    (81 thru 81 eq 81)
+    (82 thru 82 eq 82)
+    (83 thru 83 eq 83)
+    (84 thru 84 eq 84)
+    (85 thru 85 eq 85)
+    (86 thru 86 eq 86)
+    (87 thru 87 eq 87)
+    (88 thru 88 eq 88)
+    (89 thru 89 eq 89)
+    (90 thru 90 eq 90)
+    (91 thru 91 eq 91)
+    (92 thru 92 eq 92)
+    (93 thru 93 eq 93)
+    (94 thru 94 eq 94)
+    (95 thru 99999 eq 95)
+    / 
+ R3279401 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R3279701 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R3400600 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 16 eq 16)
+    (17 thru 99999 eq 17)
+    / 
+ R3400700 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R3511400 
+    (0 thru 78 eq 0)
+    (79 thru 79 eq 79)
+    (80 thru 80 eq 80)
+    (81 thru 81 eq 81)
+    (82 thru 82 eq 82)
+    (83 thru 83 eq 83)
+    (84 thru 84 eq 84)
+    (85 thru 85 eq 85)
+    (86 thru 86 eq 86)
+    (87 thru 87 eq 87)
+    (88 thru 88 eq 88)
+    (89 thru 89 eq 89)
+    (90 thru 90 eq 90)
+    (91 thru 91 eq 91)
+    (92 thru 92 eq 92)
+    (93 thru 93 eq 93)
+    (94 thru 94 eq 94)
+    (95 thru 99999 eq 95)
+    / 
+ R3559001 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R3559301 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R3656000 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 16 eq 16)
+    (17 thru 99999 eq 17)
+    / 
+ R3656100 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R3711400 
+    (0 thru 78 eq 0)
+    (79 thru 79 eq 79)
+    (80 thru 80 eq 80)
+    (81 thru 81 eq 81)
+    (82 thru 82 eq 82)
+    (83 thru 83 eq 83)
+    (84 thru 84 eq 84)
+    (85 thru 85 eq 85)
+    (86 thru 86 eq 86)
+    (87 thru 87 eq 87)
+    (88 thru 88 eq 88)
+    (89 thru 89 eq 89)
+    (90 thru 90 eq 90)
+    (91 thru 91 eq 91)
+    (92 thru 92 eq 92)
+    (93 thru 93 eq 93)
+    (94 thru 94 eq 94)
+    (95 thru 99999 eq 95)
+    / 
+ R3897101 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R3897401 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R4006500 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 16 eq 16)
+    (17 thru 99999 eq 17)
+    / 
+ R4006600 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R4139001 
+    (0 thru 78 eq 0)
+    (79 thru 79 eq 79)
+    (80 thru 80 eq 80)
+    (81 thru 81 eq 81)
+    (82 thru 82 eq 82)
+    (83 thru 83 eq 83)
+    (84 thru 84 eq 84)
+    (85 thru 85 eq 85)
+    (86 thru 86 eq 86)
+    (87 thru 87 eq 87)
+    (88 thru 88 eq 88)
+    (89 thru 89 eq 89)
+    (90 thru 90 eq 90)
+    (91 thru 91 eq 91)
+    (92 thru 92 eq 92)
+    (93 thru 93 eq 93)
+    (94 thru 94 eq 94)
+    (95 thru 99999 eq 95)
+    / 
+ R4295101 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R4295501 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R4417600 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 10 eq 10)
+    (11 thru 11 eq 11)
+    (12 thru 12 eq 12)
+    (13 thru 13 eq 13)
+    (14 thru 14 eq 14)
+    (15 thru 15 eq 15)
+    (16 thru 99999 eq 16)
+    / 
+ R4417700 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 9999999 eq 50000)
+    / 
+ R4982801 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ R4983201 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ R5080600 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 999 eq 10)
+    / 
+ R5080700 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ R5165900 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 999 eq 10)
+    / 
+ R5166000 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ R5626201 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ R5626601 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ R6364601 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ R6365001 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ R6478600 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 999 eq 10)
+    / 
+ R6478700 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ R6909701 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ R6911101 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ R7006400 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 999 eq 10)
+    / 
+ R7006500 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ R7607800 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ R7609000 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ R7703600 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 999 eq 10)
+    / 
+ R7703700 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ R8316300 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 999999999 eq 50000)
+    / 
+ R8318200 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 999999999 eq 50000)
+    / 
+ R8496000 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 999 eq 10)
+    / 
+ R8496100 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 999999999 eq 50000)
+    / 
+ T0015501 
+    (0 thru 1988 eq 0)
+    (1989 thru 1989 eq 1989)
+    (1990 thru 1990 eq 1990)
+    (1991 thru 1991 eq 1991)
+    (1992 thru 1992 eq 1992)
+    (1993 thru 1993 eq 1993)
+    (1994 thru 1994 eq 1994)
+    (1995 thru 1995 eq 1995)
+    (1996 thru 1996 eq 1996)
+    (1997 thru 1997 eq 1997)
+    (1998 thru 1998 eq 1998)
+    (1999 thru 1999 eq 1999)
+    (2000 thru 2000 eq 2000)
+    (2001 thru 2001 eq 2001)
+    (2002 thru 2002 eq 2002)
+    (2003 thru 2003 eq 2003)
+    (2004 thru 2004 eq 2004)
+    (2005 thru 2005 eq 2005)
+    (2006 thru 2015 eq 2006)
+    / 
+ T0912400 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T0913900 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T0987600 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 999 eq 10)
+    / 
+ T0987800 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T1215501 
+    (0 thru 1988 eq 0)
+    (1989 thru 1989 eq 1989)
+    (1990 thru 1990 eq 1990)
+    (1991 thru 1991 eq 1991)
+    (1992 thru 1992 eq 1992)
+    (1993 thru 1993 eq 1993)
+    (1994 thru 1994 eq 1994)
+    (1995 thru 1995 eq 1995)
+    (1996 thru 1996 eq 1996)
+    (1997 thru 1997 eq 1997)
+    (1998 thru 1998 eq 1998)
+    (1999 thru 1999 eq 1999)
+    (2000 thru 2000 eq 2000)
+    (2001 thru 2001 eq 2001)
+    (2002 thru 2002 eq 2002)
+    (2003 thru 2003 eq 2003)
+    (2004 thru 2004 eq 2004)
+    (2005 thru 2005 eq 2005)
+    (2006 thru 2006 eq 2006)
+    (2007 thru 2007 eq 2007)
+    (2008 thru 2016 eq 2008)
+    / 
+ T1215701 
+    (0 thru 1988 eq 0)
+    (1989 thru 1989 eq 1989)
+    (1990 thru 1990 eq 1990)
+    (1991 thru 1991 eq 1991)
+    (1992 thru 1992 eq 1992)
+    (1993 thru 1993 eq 1993)
+    (1994 thru 1994 eq 1994)
+    (1995 thru 1995 eq 1995)
+    (1996 thru 1996 eq 1996)
+    (1997 thru 1997 eq 1997)
+    (1998 thru 1998 eq 1998)
+    (1999 thru 1999 eq 1999)
+    (2000 thru 2000 eq 2000)
+    (2001 thru 2001 eq 2001)
+    (2002 thru 2002 eq 2002)
+    (2003 thru 2003 eq 2003)
+    (2004 thru 2004 eq 2004)
+    (2005 thru 2005 eq 2005)
+    (2006 thru 2006 eq 2006)
+    (2007 thru 2007 eq 2007)
+    (2008 thru 2016 eq 2008)
+    / 
+ T2076700 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T2078800 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T2209900 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 999 eq 10)
+    / 
+ T2210000 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T2274201 
+    (-999 thru 1979 eq -999)
+    (1980 thru 1980 eq 1980)
+    (1981 thru 1981 eq 1981)
+    (1982 thru 1982 eq 1982)
+    (1983 thru 1983 eq 1983)
+    (1984 thru 1984 eq 1984)
+    (1985 thru 1985 eq 1985)
+    (1986 thru 1986 eq 1986)
+    (1987 thru 1987 eq 1987)
+    (1988 thru 1988 eq 1988)
+    (1989 thru 1989 eq 1989)
+    (1990 thru 1990 eq 1990)
+    (1991 thru 1991 eq 1991)
+    (1992 thru 1992 eq 1992)
+    (1993 thru 1993 eq 1993)
+    (1994 thru 1994 eq 1994)
+    (1995 thru 1995 eq 1995)
+    (1996 thru 1996 eq 1996)
+    (1997 thru 1997 eq 1997)
+    (1998 thru 1998 eq 1998)
+    (1999 thru 1999 eq 1999)
+    (2000 thru 2000 eq 2000)
+    (2001 thru 2001 eq 2001)
+    (2002 thru 2002 eq 2002)
+    (2003 thru 2003 eq 2003)
+    (2004 thru 2004 eq 2004)
+    (2005 thru 2005 eq 2005)
+    (2006 thru 9999999999 eq 2006)
+    / 
+ T3045300 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T3047500 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T3107700 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 999 eq 10)
+    / 
+ T3107800 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T3214301 
+    (-999 thru 1979 eq -999)
+    (1980 thru 1980 eq 1980)
+    (1981 thru 1981 eq 1981)
+    (1982 thru 1982 eq 1982)
+    (1983 thru 1983 eq 1983)
+    (1984 thru 1984 eq 1984)
+    (1985 thru 1985 eq 1985)
+    (1986 thru 1986 eq 1986)
+    (1987 thru 1987 eq 1987)
+    (1988 thru 1988 eq 1988)
+    (1989 thru 1989 eq 1989)
+    (1990 thru 1990 eq 1990)
+    (1991 thru 1991 eq 1991)
+    (1992 thru 1992 eq 1992)
+    (1993 thru 1993 eq 1993)
+    (1994 thru 1994 eq 1994)
+    (1995 thru 1995 eq 1995)
+    (1996 thru 1996 eq 1996)
+    (1997 thru 1997 eq 1997)
+    (1998 thru 1998 eq 1998)
+    (1999 thru 1999 eq 1999)
+    (2000 thru 2000 eq 2000)
+    (2001 thru 2001 eq 2001)
+    (2002 thru 2002 eq 2002)
+    (2003 thru 2003 eq 2003)
+    (2004 thru 2004 eq 2004)
+    (2005 thru 2005 eq 2005)
+    (2006 thru 9999999999 eq 2006)
+    / 
+ T3977400 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T3979400 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T4112200 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 999 eq 10)
+    / 
+ T4112300 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T4202601 
+    (-999 thru 1979 eq -999)
+    (1980 thru 1980 eq 1980)
+    (1981 thru 1981 eq 1981)
+    (1982 thru 1982 eq 1982)
+    (1983 thru 1983 eq 1983)
+    (1984 thru 1984 eq 1984)
+    (1985 thru 1985 eq 1985)
+    (1986 thru 1986 eq 1986)
+    (1987 thru 1987 eq 1987)
+    (1988 thru 1988 eq 1988)
+    (1989 thru 1989 eq 1989)
+    (1990 thru 1990 eq 1990)
+    (1991 thru 1991 eq 1991)
+    (1992 thru 1992 eq 1992)
+    (1993 thru 1993 eq 1993)
+    (1994 thru 1994 eq 1994)
+    (1995 thru 1995 eq 1995)
+    (1996 thru 1996 eq 1996)
+    (1997 thru 1997 eq 1997)
+    (1998 thru 1998 eq 1998)
+    (1999 thru 1999 eq 1999)
+    (2000 thru 2000 eq 2000)
+    (2001 thru 2001 eq 2001)
+    (2002 thru 2002 eq 2002)
+    (2003 thru 2003 eq 2003)
+    (2004 thru 2004 eq 2004)
+    (2005 thru 2005 eq 2005)
+    (2006 thru 9999999999 eq 2006)
+    / 
+ T4915800 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T4917800 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T5022500 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 999 eq 10)
+    / 
+ T5022600 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T5177601 
+    (-999 thru 1979 eq -999)
+    (1980 thru 1980 eq 1980)
+    (1981 thru 1981 eq 1981)
+    (1982 thru 1982 eq 1982)
+    (1983 thru 1983 eq 1983)
+    (1984 thru 1984 eq 1984)
+    (1985 thru 1985 eq 1985)
+    (1986 thru 1986 eq 1986)
+    (1987 thru 1987 eq 1987)
+    (1988 thru 1988 eq 1988)
+    (1989 thru 1989 eq 1989)
+    (1990 thru 1990 eq 1990)
+    (1991 thru 1991 eq 1991)
+    (1992 thru 1992 eq 1992)
+    (1993 thru 1993 eq 1993)
+    (1994 thru 1994 eq 1994)
+    (1995 thru 1995 eq 1995)
+    (1996 thru 1996 eq 1996)
+    (1997 thru 1997 eq 1997)
+    (1998 thru 1998 eq 1998)
+    (1999 thru 1999 eq 1999)
+    (2000 thru 2000 eq 2000)
+    (2001 thru 2001 eq 2001)
+    (2002 thru 2002 eq 2002)
+    (2003 thru 2003 eq 2003)
+    (2004 thru 2004 eq 2004)
+    (2005 thru 2005 eq 2005)
+    (2006 thru 9999999999 eq 2006)
+    / 
+ T5619500 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T5621700 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+    / 
+ T5770700 
+    (0 thru 0 eq 0)
+    (1 thru 1 eq 1)
+    (2 thru 2 eq 2)
+    (3 thru 3 eq 3)
+    (4 thru 4 eq 4)
+    (5 thru 5 eq 5)
+    (6 thru 6 eq 6)
+    (7 thru 7 eq 7)
+    (8 thru 8 eq 8)
+    (9 thru 9 eq 9)
+    (10 thru 999 eq 10)
+    / 
+ T5770800 
+    (0 thru 0 eq 0)
+    (1 thru 999 eq 1)
+    (1000 thru 1999 eq 1000)
+    (2000 thru 2999 eq 2000)
+    (3000 thru 3999 eq 3000)
+    (4000 thru 4999 eq 4000)
+    (5000 thru 5999 eq 5000)
+    (6000 thru 6999 eq 6000)
+    (7000 thru 7999 eq 7000)
+    (8000 thru 8999 eq 8000)
+    (9000 thru 9999 eq 9000)
+    (10000 thru 14999 eq 10000)
+    (15000 thru 19999 eq 15000)
+    (20000 thru 24999 eq 20000)
+    (25000 thru 49999 eq 25000)
+    (50000 thru 99999999 eq 50000)
+.
+
+* value labels
+ R0006500
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R0007900
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R0008500
+    1 "YES"
+    0 "NO"
+    /
+ R0009100
+    0 "0"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16 TO 99999: 16+"
+    /
+ R0017200
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R0023500
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COLLEGE"
+    14 "2ND YR COLLEGE"
+    15 "3RD YR COLLEGE"
+    16 "4TH YR COLLEGE"
+    17 "5TH YR COLLEGE"
+    18 "6TH+ YR COLLEGE"
+    /
+ R0153710
+    0 "0"
+    1 "1 TO 4"
+    5 "5 TO 9"
+    10 "10 TO 14"
+    15 "15 TO 19"
+    /
+ R0173600
+    1 "CROSS MALE WHITE"
+    2 "CROSS MALE WH. POOR"
+    3 "CROSS MALE BLACK"
+    4 "CROSS MALE HISPANIC"
+    5 "CROSS FEMALE WHITE"
+    6 "CROSS FEMALE WH POOR"
+    7 "CROSS FEMALE BLACK"
+    8 "CROSS FEMALE HISPANIC"
+    9 "SUP MALE WH POOR"
+    10 "SUP MALE BLACK"
+    11 "SUP MALE HISPANIC"
+    12 "SUP FEM WH POOR"
+    13 "SUP FEMALE BLACK"
+    14 "SUP FEMALE HISPANIC"
+    15 "MIL MALE WHITE"
+    16 "MIL MALE BLACK"
+    17 "MIL MALE HISPANIC"
+    18 "MIL FEMALE WHITE"
+    19 "MIL FEMALE BLACK"
+    20 "MIL FEMALE HISPANIC"
+    /
+ R0187900
+    1 "VERSION A"
+    2 "VERSION B1"
+    3 "VERSION C"
+    4 "VERSION B2"
+    /
+ R0214700
+    1 "HISPANIC"
+    2 "BLACK"
+    3 "NON-BLACK, NON-HISPANIC"
+    /
+ R0214800
+    1 "MALE"
+    2 "FEMALE"
+    /
+ R0215100
+    0 "RURAL"
+    1 "URBAN"
+    /
+ R0216500
+    0 "0 TO 13: < 14"
+    14 "14"
+    15 "15"
+    16 "16"
+    17 "17"
+    18 "18"
+    19 "19"
+    20 "20"
+    21 "21"
+    22 "22"
+    23 "23"
+    24 "24"
+    25 "25"
+    26 "26"
+    27 "27"
+    28 "28"
+    29 "29"
+    30 "30 TO 99999: 30+"
+    /
+ R0216601
+    1 "NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "ENROLLED IN HIGH SCHOOL"
+    3 "ENROLLED IN COLLEGE"
+    4 "NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R0216701
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R0217502
+    0 "0: < 1"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16"
+    17 "17 TO 99999: 17+"
+    /
+ R0217900
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R0217910
+    1 "IN POVERTY"
+    0 "NOT IN POVERTY"
+    /
+ R0229100
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R0297300
+    1 "YES"
+    0 "NO"
+    /
+ R0297400
+    1 "ASSOCIATE'S DEGREE"
+    2 "BACHELOR'S DEGREE"
+    3 "MASTER'S DEGREE"
+    4 "OTHER"
+    /
+ R0298000
+    1 "ASSOCIATE'S DEGREE"
+    2 "BACHELOR'S DEGREE"
+    3 "MASTER'S DEGREE"
+    4 "OTHER"
+    /
+ R0402700
+    1 "VERSION A"
+    2 "VERSION B"
+    3 "VERSION C"
+    /
+ R0405210
+    0 "0: < 1"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16"
+    17 "17 TO 99999: 17+"
+    /
+ R0406010
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R0406100
+    1 "IN POVERTY"
+    0 "NOT IN POVERTY"
+    /
+ R0406401
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R0406501
+    1 "NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "ENROLLED IN HIGH SCHOOL"
+    3 "ENROLLED IN COLLEGE"
+    4 "NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R0417300
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R0419800
+    1 "YES"
+    0 "NO"
+    /
+ R0419900
+    1 "ASSOCIATE'S DEGREE"
+    2 "BACHELOR'S DEGREE"
+    3 "MASTER'S DEGREE"
+    4 "OTHER"
+    /
+ R0420100
+    1 "ASSOCIATE'S DEGREE"
+    2 "BACHELOR'S DEGREE"
+    3 "MASTER'S DEGREE"
+    4 "OTHER"
+    /
+ R0602400
+    1 "VERSION A"
+    2 "VERSION B"
+    3 "VERSION C"
+    /
+ R0618410
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R0618500
+    1 "IN POVERTY"
+    0 "NOT IN POVERTY"
+    /
+ R0618901
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R0619001
+    1 "NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "ENROLLED IN HIGH SCHOOL"
+    3 "ENROLLED IN COLLEGE"
+    4 "NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R0647103
+    0 "0: < 1"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16"
+    17 "17 TO 99999: 17+"
+    /
+ R0664400
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R0667400
+    1 "YES"
+    0 "NO"
+    /
+ R0667500
+    1 "ASSOCIATE'S DEGREE"
+    2 "BACHELOR'S DEGREE"
+    3 "MASTER'S DEGREE"
+    4 "OTHER"
+    /
+ R0667700
+    1 "ASSOCIATE'S DEGREE"
+    2 "BACHELOR'S DEGREE"
+    3 "MASTER'S DEGREE"
+    4 "OTHER"
+    /
+ R0782101
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R0816400
+    1 "VERSION A"
+    2 "VERSION B"
+    3 "VERSION C"
+    /
+ R0828300
+    1 "VERSION A"
+    2 "VERSION B"
+    3 "VERSION C"
+    /
+ R0896710
+    0 "0: < 1"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16"
+    17 "17 TO 99999: 17+"
+    /
+ R0898201
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R0898301
+    1 "NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "ENROLLED IN HIGH SCHOOL"
+    3 "ENROLLED IN COLLEGE"
+    4 "NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R0898600
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R0898700
+    1 "IN POVERTY"
+    0 "NOT IN POVERTY"
+    /
+ R0905800
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R0908100
+    1 "YES"
+    0 "NO"
+    /
+ R0908200
+    1 "ASSOCIATE'S DEGREE"
+    2 "BACHELOR'S DEGREE"
+    3 "MASTER'S DEGREE"
+    4 "OTHER"
+    /
+ R0908400
+    1 "ASSOCIATE'S DEGREE"
+    2 "BACHELOR'S DEGREE"
+    3 "MASTER'S DEGREE"
+    4 "OTHER"
+    /
+ R1024001
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R1024301
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R1075600
+    1 "VERSION A"
+    2 "VERSION B"
+    3 "VERSION C"
+    /
+ R1144410
+    0 "0: < 1"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16"
+    17 "17 TO 99999: 17+"
+    /
+ R1144500
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R1144600
+    1 "IN POVERTY"
+    0 "NOT IN POVERTY"
+    /
+ R1145001
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R1145101
+    1 "NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "ENROLLED IN HIGH SCHOOL"
+    3 "ENROLLED IN COLLEGE"
+    4 "NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R1205700
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R1214300
+    1 "YES"
+    0 "NO"
+    /
+ R1214400
+    1 "ASSOCIATE'S DEGREE"
+    2 "BACHELOR'S DEGREE"
+    3 "MASTER'S DEGREE"
+    4 "OTHER"
+    /
+ R1214600
+    1 "ASSOCIATE'S DEGREE"
+    2 "BACHELOR'S DEGREE"
+    3 "MASTER'S DEGREE"
+    4 "OTHER"
+    /
+ R1410701
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R1451300
+    1 "VERSION A"
+    2 "VERSION B"
+    3 "VERSION C"
+    /
+ R1519610
+    0 "0: < 1"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16"
+    17 "17 TO 99999: 17+"
+    /
+ R1519700
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R1519800
+    1 "IN POVERTY"
+    0 "NOT IN POVERTY"
+    /
+ R1520201
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R1520301
+    1 "NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "ENROLLED IN HIGH SCHOOL"
+    3 "ENROLLED IN COLLEGE"
+    4 "NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R1605000
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R1778501
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R1778801
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R1798500
+    1 "VERSION A"
+    2 "VERSION B"
+    3 "VERSION C"
+    /
+ R1890210
+    0 "0: < 1"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16"
+    17 "17 TO 99999: 17+"
+    /
+ R1890400
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R1890500
+    1 "IN POVERTY"
+    0 "NOT IN POVERTY"
+    /
+ R1890901
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R1891001
+    1 "NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "ENROLLED IN HIGH SCHOOL"
+    3 "ENROLLED IN COLLEGE"
+    4 "NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R1905500
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R2141601
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R2141901
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R2160100
+    1 "VERSION A"
+    2 "VERSION B"
+    3 "VERSION C"
+    /
+ R2257410
+    0 "0: < 1"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16"
+    17 "17 TO 99999: 17+"
+    /
+ R2257500
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R2257600
+    1 "IN POVERTY"
+    0 "NOT IN POVERTY"
+    /
+ R2258001
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R2258101
+    1 "NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "ENROLLED IN HIGH SCHOOL"
+    3 "ENROLLED IN COLLEGE"
+    4 "NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R2306400
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R2350301
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R2350601
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R2444610
+    0 "0: < 1"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16"
+    17 "17 TO 99999: 17+"
+    /
+ R2444700
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R2444900
+    1 "IN POVERTY"
+    0 "NOT IN POVERTY"
+    /
+ R2445401
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R2445501
+    1 "NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "ENROLLED IN HIGH SCHOOL"
+    3 "ENROLLED IN COLLEGE"
+    4 "NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R2508900
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R2509800
+    1 "HIGH SCHOOL DIPLOMA (OR EQUIVALENT)"
+    2 "ASSOCIATE/JUNIOR COLLEGE (AA)"
+    3 "BACHELOR OF ARTS DEGREE (BA)"
+    4 "BACHELOR OF SCIENCE (BS)"
+    5 "MASTER'S DEGREE (MA,MBA,MS,MSW)"
+    6 "DOCTORAL DEGREE (PHD)"
+    7 "PROFESSIONAL DEGREE (MD,LLD,DDS)"
+    8 "OTHER"
+    /
+ R2510000
+    0 "0 TO 72: < 73"
+    73 "73"
+    74 "74"
+    75 "75"
+    76 "76"
+    77 "77"
+    78 "78"
+    79 "79"
+    80 "80"
+    81 "81"
+    82 "82"
+    83 "83"
+    84 "84"
+    85 "85"
+    86 "86"
+    87 "87"
+    88 "88"
+    89 "89 TO 99999: 89+"
+    /
+ R2722501
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R2722801
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R2870110
+    0 "0: < 1"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16"
+    17 "17 TO 99999: 17+"
+    /
+ R2870200
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R2870400
+    1 "IN POVERTY"
+    0 "NOT IN POVERTY"
+    /
+ R2871101
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R2871201
+    1 "NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "ENROLLED IN HIGH SCHOOL"
+    3 "ENROLLED IN COLLEGE"
+    4 "NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R2908000
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R2909100
+    1 "YES"
+    0 "NO"
+    /
+ R2909200
+    1 "HIGH SCHOOL DIPLOMA (OR EQUIVALENT)"
+    2 "ASSOCIATE/JUNIOR COLLEGE (AA)"
+    3 "BACHELOR OF ARTS DEGREE (BA)"
+    4 "BACHELOR OF SCIENCE (BS)"
+    5 "MASTER'S DEGREE (MA,MBA,MS,MSW)"
+    6 "DOCTORAL DEGREE (PHD)"
+    7 "PROFESSIONAL DEGREE (MD,LLD,DDS)"
+    8 "OTHER"
+    /
+ R2909400
+    0 "0 TO 74: < 75"
+    75 "75"
+    76 "76"
+    77 "77"
+    78 "78"
+    79 "79"
+    80 "80"
+    81 "81"
+    82 "82"
+    83 "83"
+    84 "84"
+    85 "85"
+    86 "86"
+    87 "87"
+    88 "88"
+    89 "89"
+    90 "90"
+    91 "91 TO 99999: 91+"
+    /
+ R2971401
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R2971701
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R3073910
+    0 "0: < 1"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16"
+    17 "17 TO 99999: 17+"
+    /
+ R3074000
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R3074100
+    1 "IN POVERTY"
+    0 "NOT IN POVERTY"
+    /
+ R3074801
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R3074901
+    1 "NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "ENROLLED IN HIGH SCHOOL"
+    3 "ENROLLED IN COLLEGE"
+    4 "NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R3110100
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R3111100
+    1 "YES"
+    0 "NO"
+    /
+ R3111200
+    1 "HIGH SCHOOL DIPLOMA (OR EQUIVALENT)"
+    2 "ASSOCIATE/JUNIOR COLLEGE (AA)"
+    3 "BACHELOR OF ARTS DEGREE (BA)"
+    4 "BACHELOR OF SCIENCE (BS)"
+    5 "MASTER'S DEGREE (MA,MBA,MS,MSW)"
+    6 "DOCTORAL DEGREE (PHD)"
+    7 "PROFESSIONAL DEGREE (MD,LLD,DDS)"
+    8 "OTHER"
+    /
+ R3111400
+    0 "0 TO 78: < 79"
+    79 "79"
+    80 "80"
+    81 "81"
+    82 "82"
+    83 "83"
+    84 "84"
+    85 "85"
+    86 "86"
+    87 "87"
+    88 "88"
+    89 "89"
+    90 "90"
+    91 "91"
+    92 "92"
+    93 "93"
+    94 "94"
+    95 "95 TO 99999: 95+"
+    /
+ R3279401
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R3279701
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R3400600
+    0 "0: < 1"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16"
+    17 "17 TO 99999: 17+"
+    /
+ R3400700
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R3400800
+    1 "IN POVERTY"
+    0 "NOT IN POVERTY"
+    /
+ R3401501
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R3401601
+    1 "NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "ENROLLED IN HIGH SCHOOL"
+    3 "ENROLLED IN COLLEGE"
+    4 "NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R3510100
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R3511100
+    1 "YES"
+    0 "NO"
+    /
+ R3511200
+    1 "HIGH SCHOOL DIPLOMA (OR EQUIVALENT)"
+    2 "ASSOCIATE/JUNIOR COLLEGE (AA)"
+    3 "BACHELOR OF ARTS DEGREE (BA)"
+    4 "BACHELOR OF SCIENCE (BS)"
+    5 "MASTER'S DEGREE (MA,MBA,MS,MSW)"
+    6 "DOCTORAL DEGREE (PHD)"
+    7 "PROFESSIONAL DEGREE (MD,LLD,DDS)"
+    8 "OTHER"
+    /
+ R3511400
+    0 "0 TO 78: < 79"
+    79 "79"
+    80 "80"
+    81 "81"
+    82 "82"
+    83 "83"
+    84 "84"
+    85 "85"
+    86 "86"
+    87 "87"
+    88 "88"
+    89 "89"
+    90 "90"
+    91 "91"
+    92 "92"
+    93 "93"
+    94 "94"
+    95 "95 TO 99999: 95+"
+    /
+ R3559001
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R3559301
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R3656000
+    0 "0: < 1"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16"
+    17 "17 TO 99999: 17+"
+    /
+ R3656100
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R3656200
+    1 "IN POVERTY"
+    0 "NOT IN POVERTY"
+    /
+ R3656901
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R3657001
+    1 "NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "ENROLLED IN HIGH SCHOOL"
+    3 "ENROLLED IN COLLEGE"
+    4 "NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R3710100
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R3711100
+    1 "YES"
+    0 "NO"
+    /
+ R3711200
+    1 "HIGH SCHOOL DIPLOMA (OR EQUIVALENT)"
+    2 "ASSOCIATE/JUNIOR COLLEGE (AA)"
+    3 "BACHELOR OF ARTS DEGREE (BA)"
+    4 "BACHELOR OF SCIENCE (BS)"
+    5 "MASTER'S DEGREE (MA,MBA,MS,MSW)"
+    6 "DOCTORAL DEGREE (PHD)"
+    7 "PROFESSIONAL DEGREE (MD,LLD,DDS)"
+    8 "OTHER"
+    /
+ R3711400
+    0 "0 TO 78: < 79"
+    79 "79"
+    80 "80"
+    81 "81"
+    82 "82"
+    83 "83"
+    84 "84"
+    85 "85"
+    86 "86"
+    87 "87"
+    88 "88"
+    89 "89"
+    90 "90"
+    91 "91"
+    92 "92"
+    93 "93"
+    94 "94"
+    95 "95 TO 99999: 95+"
+    /
+ R3897101
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R3897401
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R4006500
+    0 "0: < 1"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16"
+    17 "17 TO 99999: 17+"
+    /
+ R4006600
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R4006700
+    1 "IN POVERTY"
+    0 "NOT IN POVERTY"
+    /
+ R4007401
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R4007501
+    1 "NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "ENROLLED IN HIGH SCHOOL"
+    3 "ENROLLED IN COLLEGE"
+    4 "NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R4137800
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R4138800
+    1 "YES"
+    0 "NO"
+    /
+ R4138900
+    1 "HIGH SCHOOL DIPLOMA (OR EQUIVALENT)"
+    2 "ASSOCIATE/JUNIOR COLLEGE (AA)"
+    3 "BACHELOR OF ARTS DEGREE (BA)"
+    4 "BACHELOR OF SCIENCE (BS)"
+    5 "MASTER'S DEGREE (MA,MBA,MS,MSW)"
+    6 "DOCTORAL DEGREE (PHD)"
+    7 "PROFESSIONAL DEGREE (MD,LLD,DDS)"
+    8 "OTHER"
+    /
+ R4139001
+    0 "0 TO 78: < 79"
+    79 "79"
+    80 "80"
+    81 "81"
+    82 "82"
+    83 "83"
+    84 "84"
+    85 "85"
+    86 "86"
+    87 "87"
+    88 "88"
+    89 "89"
+    90 "90"
+    91 "91"
+    92 "92"
+    93 "93"
+    94 "94"
+    95 "95 TO 99999: 95+"
+    /
+ R4295101
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R4295501
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R4417600
+    0 "0"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10"
+    11 "11"
+    12 "12"
+    13 "13"
+    14 "14"
+    15 "15"
+    16 "16 TO 99999: 16+"
+    /
+ R4417700
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 9999999: 50000+"
+    /
+ R4417800
+    1 "IN POVERTY"
+    0 "NOT IN POVERTY"
+    /
+ R4418501
+    0 "NONE"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YR COL"
+    14 "2ND YR COL"
+    15 "3RD YR COL"
+    16 "4TH YR COL"
+    17 "5TH YR COL"
+    18 "6TH YR COL"
+    19 "7TH YR COL"
+    20 "8TH YR COL OR MORE"
+    95 "UNGRADED"
+    /
+ R4418601
+    1 "NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "ENROLLED IN HIGH SCHOOL"
+    3 "ENROLLED IN COLLEGE"
+    4 "NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R4526400
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ R4527500
+    1 "YES"
+    0 "NO"
+    /
+ R4527600
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    /
+ R4982801
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ R4983201
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ R5080600
+    0 "0"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10 TO 999: 10+"
+    /
+ R5080700
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ R5080800
+    1 "1: 1  IN POVERTY"
+    0 "0: 0  NOT IN POVERTY"
+    /
+ R5103900
+    0 "NONE"
+    93 "PRE-KINDERGARTEN"
+    94 "KINDERGARTEN"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ R5104000
+    1 "1: 1  NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "2: 2  ENROLLED IN HIGH SCHOOL"
+    3 "3: 3  ENROLLED IN COLLEGE"
+    4 "4: 4  NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R5165900
+    0 "0"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10 TO 999: 10+"
+    /
+ R5166000
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ R5166100
+    1 "1: IN POVERTY"
+    0 "0: NOT IN POVERTY"
+    /
+ R5166901
+    0 "NONE"
+    93 "PRE-KINDERGARTEN"
+    94 "KINDERGARTEN"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ R5166902
+    1 "1: NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "2: ENROLLED IN HIGH SCHOOL"
+    3 "3: ENROLLED IN COLLEGE"
+    4 "4: NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R5221700
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ R5222800
+    1 "YES"
+    0 "NO"
+    /
+ R5222900
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    /
+ R5626201
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ R5626601
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ R5821700
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ R5822700
+    1 "YES"
+    0 "NO"
+    /
+ R5822800
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    /
+ R6364601
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ R6365001
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ R6478600
+    0 "0"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10 TO 999: 10+"
+    /
+ R6478700
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ R6478800
+    1 "1: 1  IN POVERTY"
+    0 "0: 0  NOT IN POVERTY"
+    /
+ R6479600
+    0 "NONE"
+    93 "PRE-KINDERGARTEN"
+    94 "KINDERGARTEN"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ R6479700
+    1 "1: 1  NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "2: 2  ENROLLED IN HIGH SCHOOL"
+    3 "3: 3  ENROLLED IN COLLEGE"
+    4 "4: 4  NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R6540300
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ R6541300
+    1 "YES"
+    0 "NO"
+    /
+ R6541400
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    /
+ R6909701
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ R6911101
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ R7006400
+    0 "0"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10 TO 999: 10+"
+    /
+ R7006500
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ R7006600
+    0 "0: 0  NOT IN POVERTY"
+    1 "1: 1  IN POVERTY"
+    /
+ R7007300
+    0 "NONE"
+    93 "PRE-KINDERGARTEN"
+    94 "KINDERGARTEN"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ R7007400
+    1 "1: 1  NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "2: 2  ENROLLED IN HIGH SCHOOL"
+    3 "3: 3  ENROLLED IN COLLEGE"
+    4 "4: 4  NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ R7103500
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ R7104500
+    1 "Yes"
+    0 "No"
+    /
+ R7104600
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    /
+ R7607800
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ R7609000
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ R7703600
+    0 "0"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10 TO 999: 10+"
+    /
+ R7703700
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ R7703900
+    0 "0: 0  NOT IN POVERTY"
+    1 "1: 1  IN POVERTY"
+    /
+ R7704600
+    0 "NONE"
+    93 "PRE-KINDERGARTEN"
+    94 "KINDERGARTEN"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ R7810400
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ R7811400
+    1 "Yes"
+    0 "No"
+    /
+ R7811500
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    /
+ R8316300
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 999999999: 50000+"
+    /
+ R8318200
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 999999999: 50000+"
+    /
+ R8496000
+    0 "0"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10 TO 999: 10+"
+    /
+ R8496100
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 999999999: 50000+"
+    /
+ R8496300
+    0 "0: 0  NOT IN POVERTY"
+    1 "1: 1  IN POVERTY"
+    /
+ R8497000
+    0 "NONE"
+    93 "PRE-KINDERGARTEN"
+    94 "KINDERGARTEN"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ R8497100
+    1 "1: 1  NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "2: 2  ENROLLED IN HIGH SCHOOL"
+    3 "3: 3  ENROLLED IN COLLEGE"
+    4 "4: 4  NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ T0014300
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ T0015300
+    1 "Yes"
+    0 "No"
+    /
+ T0015400
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    /
+ T0015501
+    0 "0 TO 1988: < 1989"
+    1989 "1989"
+    1990 "1990"
+    1991 "1991"
+    1992 "1992"
+    1993 "1993"
+    1994 "1994"
+    1995 "1995"
+    1996 "1996"
+    1997 "1997"
+    1998 "1998"
+    1999 "1999"
+    2000 "2000"
+    2001 "2001"
+    2002 "2002"
+    2003 "2003"
+    2004 "2004"
+    2005 "2005"
+    2006 "2006 TO 2015: 2006+"
+    /
+ T0912400
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T0913900
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T0987600
+    0 "0"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10 TO 999: 10+"
+    /
+ T0987800
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T0987900
+    0 "0: 0  NOT IN POVERTY"
+    1 "1: 1  IN POVERTY"
+    /
+ T0988800
+    0 "NONE"
+    93 "PRE-KINDERGARTEN"
+    94 "KINDERGARTEN"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ T0988900
+    1 "1: 1  NOT ENROLLED, COMPLETED LESS THAN 12TH GRADE"
+    2 "2: 2  ENROLLED IN HIGH SCHOOL"
+    3 "3: 3  ENROLLED IN COLLEGE"
+    4 "4: 4  NOT ENROLLED, HIGH SCHOOL GRADUATE"
+    /
+ T1214200
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ T1215300
+    1 "Yes"
+    0 "No"
+    /
+ T1215400
+    0 "None"
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    /
+ T1215501
+    0 "0 TO 1988: < 1989"
+    1989 "1989"
+    1990 "1990"
+    1991 "1991"
+    1992 "1992"
+    1993 "1993"
+    1994 "1994"
+    1995 "1995"
+    1996 "1996"
+    1997 "1997"
+    1998 "1998"
+    1999 "1999"
+    2000 "2000"
+    2001 "2001"
+    2002 "2002"
+    2003 "2003"
+    2004 "2004"
+    2005 "2005"
+    2006 "2006"
+    2007 "2007"
+    2008 "2008 TO 2016: 2008+"
+    /
+ T1215600
+    0 "None"
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    /
+ T1215701
+    0 "0 TO 1988: < 1989"
+    1989 "1989"
+    1990 "1990"
+    1991 "1991"
+    1992 "1992"
+    1993 "1993"
+    1994 "1994"
+    1995 "1995"
+    1996 "1996"
+    1997 "1997"
+    1998 "1998"
+    1999 "1999"
+    2000 "2000"
+    2001 "2001"
+    2002 "2002"
+    2003 "2003"
+    2004 "2004"
+    2005 "2005"
+    2006 "2006"
+    2007 "2007"
+    2008 "2008 TO 2016: 2008+"
+    /
+ T2076700
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T2078800
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T2209900
+    0 "0"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10 TO 999: 10+"
+    /
+ T2210000
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T2210100
+    0 "0: NOT IN POVERTY"
+    1 "1: IN POVERTY"
+    /
+ T2210700
+    0 "NONE"
+    93 "PRE-KINDERGARTEN"
+    94 "KINDERGARTEN"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ T2272700
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ T2273800
+    1 "Yes"
+    0 "No"
+    /
+ T2273900
+    0 "None"
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    /
+ T2274100
+    0 "None"
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    /
+ T2274201
+    -999 "-999 TO 1979: <= 1979"
+    1980 "1980"
+    1981 "1981"
+    1982 "1982"
+    1983 "1983"
+    1984 "1984"
+    1985 "1985"
+    1986 "1986"
+    1987 "1987"
+    1988 "1988"
+    1989 "1989"
+    1990 "1990"
+    1991 "1991"
+    1992 "1992"
+    1993 "1993"
+    1994 "1994"
+    1995 "1995"
+    1996 "1996"
+    1997 "1997"
+    1998 "1998"
+    1999 "1999"
+    2000 "2000"
+    2001 "2001"
+    2002 "2002"
+    2003 "2003"
+    2004 "2004"
+    2005 "2005"
+    2006 "2006 TO 9999999999: >=2006"
+    /
+ T3045300
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T3047500
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T3107700
+    0 "0"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10 TO 999: 10+"
+    /
+ T3107800
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T3108000
+    0 "0: NOT IN POVERTY"
+    1 "1: IN POVERTY"
+    /
+ T3108600
+    0 "NONE"
+    93 "PRE-KINDERGARTEN"
+    94 "KINDERGARTEN"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ T3212800
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ T3213900
+    1 "Yes"
+    0 "No"
+    /
+ T3214000
+    0 "None"
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    /
+ T3214200
+    0 "None"
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    /
+ T3214301
+    -999 "-999 TO 1979: <= 1979"
+    1980 "1980"
+    1981 "1981"
+    1982 "1982"
+    1983 "1983"
+    1984 "1984"
+    1985 "1985"
+    1986 "1986"
+    1987 "1987"
+    1988 "1988"
+    1989 "1989"
+    1990 "1990"
+    1991 "1991"
+    1992 "1992"
+    1993 "1993"
+    1994 "1994"
+    1995 "1995"
+    1996 "1996"
+    1997 "1997"
+    1998 "1998"
+    1999 "1999"
+    2000 "2000"
+    2001 "2001"
+    2002 "2002"
+    2003 "2003"
+    2004 "2004"
+    2005 "2005"
+    2006 "2006 TO 9999999999: >=2006"
+    /
+ T3977400
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T3979400
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T4112200
+    0 "0"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10 TO 999: 10+"
+    /
+ T4112300
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T4112500
+    0 "0: NOT IN POVERTY"
+    1 "1: IN POVERTY"
+    /
+ T4113100
+    0 "NONE"
+    93 "PRE-KINDERGARTEN"
+    94 "KINDERGARTEN"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ T4201000
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ T4202100
+    1 "YES"
+    0 "NO"
+    /
+ T4202200
+    0 "None"
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    /
+ T4202500
+    0 "None"
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    /
+ T4202601
+    -999 "-999 TO 1979: <= 1979"
+    1980 "1980"
+    1981 "1981"
+    1982 "1982"
+    1983 "1983"
+    1984 "1984"
+    1985 "1985"
+    1986 "1986"
+    1987 "1987"
+    1988 "1988"
+    1989 "1989"
+    1990 "1990"
+    1991 "1991"
+    1992 "1992"
+    1993 "1993"
+    1994 "1994"
+    1995 "1995"
+    1996 "1996"
+    1997 "1997"
+    1998 "1998"
+    1999 "1999"
+    2000 "2000"
+    2001 "2001"
+    2002 "2002"
+    2003 "2003"
+    2004 "2004"
+    2005 "2005"
+    2006 "2006 TO 9999999999: >=2006"
+    /
+ T4915800
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T4917800
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T5022500
+    0 "0"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10 TO 999: 10+"
+    /
+ T5022600
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T5022800
+    0 "0: NOT IN POVERTY"
+    1 "1: IN POVERTY"
+    /
+ T5023500
+    0 "NONE"
+    93 "PRE-KINDERGARTEN"
+    94 "KINDERGARTEN"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ T5176000
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+ T5177100
+    1 "YES"
+    0 "NO"
+    /
+ T5177200
+    0 "None"
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    9 "Professional Certificate or Licensure"
+    /
+ T5177500
+    0 "None"
+    1 "High school diploma (or equivalent)"
+    2 "Associate/Junior College (AA)"
+    3 "Bachelor of Arts Degree (BA)"
+    4 "Bachelor of Science (BS)"
+    5 "Master's Degree (MA, MBA, MS, MSW)"
+    6 "Doctoral Degree (PhD)"
+    7 "Professional Degree (MD, LLD, DDS)"
+    8 "Other (SPECIFY)"
+    9 "Professional Certificate or Licensure"
+    /
+ T5177601
+    -999 "-999 TO 1979: <= 1979"
+    1980 "1980"
+    1981 "1981"
+    1982 "1982"
+    1983 "1983"
+    1984 "1984"
+    1985 "1985"
+    1986 "1986"
+    1987 "1987"
+    1988 "1988"
+    1989 "1989"
+    1990 "1990"
+    1991 "1991"
+    1992 "1992"
+    1993 "1993"
+    1994 "1994"
+    1995 "1995"
+    1996 "1996"
+    1997 "1997"
+    1998 "1998"
+    1999 "1999"
+    2000 "2000"
+    2001 "2001"
+    2002 "2002"
+    2003 "2003"
+    2004 "2004"
+    2005 "2005"
+    2006 "2006 TO 9999999999: >=2006"
+    /
+ T5619500
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T5621700
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T5770700
+    0 "0"
+    1 "1"
+    2 "2"
+    3 "3"
+    4 "4"
+    5 "5"
+    6 "6"
+    7 "7"
+    8 "8"
+    9 "9"
+    10 "10 TO 999: 10+"
+    /
+ T5770800
+    0 "0"
+    1 "1 TO 999"
+    1000 "1000 TO 1999"
+    2000 "2000 TO 2999"
+    3000 "3000 TO 3999"
+    4000 "4000 TO 4999"
+    5000 "5000 TO 5999"
+    6000 "6000 TO 6999"
+    7000 "7000 TO 7999"
+    8000 "8000 TO 8999"
+    9000 "9000 TO 9999"
+    10000 "10000 TO 14999"
+    15000 "15000 TO 19999"
+    20000 "20000 TO 24999"
+    25000 "25000 TO 49999"
+    50000 "50000 TO 99999999: 50000+"
+    /
+ T5770900
+    0 "0: NOT IN POVERTY"
+    1 "1: IN POVERTY"
+    /
+ T5771400
+    0 "NONE"
+    93 "PRE-KINDERGARTEN"
+    94 "KINDERGARTEN"
+    1 "1ST GRADE"
+    2 "2ND GRADE"
+    3 "3RD GRADE"
+    4 "4TH GRADE"
+    5 "5TH GRADE"
+    6 "6TH GRADE"
+    7 "7TH GRADE"
+    8 "8TH GRADE"
+    9 "9TH GRADE"
+    10 "10TH GRADE"
+    11 "11TH GRADE"
+    12 "12TH GRADE"
+    13 "1ST YEAR COLLEGE"
+    14 "2ND YEAR COLLEGE"
+    15 "3RD YEAR COLLEGE"
+    16 "4TH YEAR COLLEGE"
+    17 "5TH YEAR COLLEGE"
+    18 "6TH YEAR COLLEGE"
+    19 "7TH YEAR COLLEGE"
+    20 "8TH YEAR COLLEGE OR MORE"
+    95 "UNGRADED"
+    /
+.
+/* Crosswalk for Reference number & Question name
+ * Uncomment and edit this RENAME VARIABLES statement to rename variables for ease of use.
+ * This command does not guarantee uniqueness
+ */  /* *start* */
+
+* RENAME VARIABLES
+  (R0000100 = CASEID_1979) 
+  (R0006500 = HGC_MOTHER_1979)   /* HGC-MOTHER */
+  (R0007900 = HGC_FATHER_1979)   /* HGC-FATHER */
+  (R0008500 = FAM_27_1979)   /* FAM-27 */
+  (R0009100 = FAM_28A_1979)   /* FAM-28A */
+  (R0017200 = Q3_3_1979)   /* Q3-3 */
+  (R0023500 = SCHOOL_31_1979)   /* SCHOOL-31 */
+  (R0153710 = ROTTER_SCORE_1979) 
+  (R0173600 = SAMPLE_ID_1979) 
+  (R0187900 = HHI_24_1979)   /* HHI-24 */
+  (R0214700 = SAMPLE_RACE_78SCRN) 
+  (R0214800 = SAMPLE_SEX_1979) 
+  (R0215100 = URBAN_RURAL_1979)   /* URBAN-RURAL */
+  (R0216100 = SAMPWEIGHT_1979) 
+  (R0216500 = AGEATINT_1979) 
+  (R0216601 = ENROLLMTREV79_1979) 
+  (R0216701 = HGCREV79_1979) 
+  (R0217502 = FAMSIZE_1979) 
+  (R0217900 = TNFI_TRUNC_1979) 
+  (R0217910 = POVSTATUS_1979) 
+  (R0229100 = Q3_3_1980)   /* Q3-3 */
+  (R0297300 = Q3_10A_1980)   /* Q3-10A */
+  (R0297400 = DEGREE_1A_1_1980)   /* DEGREE-1A_1 */
+  (R0298000 = DEGREE_1A_2_1980)   /* DEGREE-1A_2 */
+  (R0402700 = HHI_24_1980)   /* HHI-24 */
+  (R0405210 = FAMSIZE_1980) 
+  (R0406010 = TNFI_TRUNC_1980) 
+  (R0406100 = POVSTATUS_1980) 
+  (R0406401 = HGCREV80_1980) 
+  (R0406501 = ENROLLMTREV80_1980) 
+  (R0417300 = Q3_3_1981)   /* Q3-3 */
+  (R0419800 = Q3_10A_1981)   /* Q3-10A */
+  (R0419900 = DEGREE_1A_1_1981)   /* DEGREE-1A_1 */
+  (R0420100 = DEGREE_1A_2_1981)   /* DEGREE-1A_2 */
+  (R0602400 = HHR_LI_1981) 
+  (R0618301 = AFQT_3_1981)   /* AFQT-3 */
+  (R0618410 = TNFI_TRUNC_1981) 
+  (R0618500 = POVSTATUS_1981) 
+  (R0618901 = HGCREV81_1981) 
+  (R0619001 = ENROLLMTREV81_1981) 
+  (R0647103 = FAMSIZE_1981) 
+  (R0664400 = Q3_3_1982)   /* Q3-3 */
+  (R0667400 = Q3_10A_1982)   /* Q3-10A */
+  (R0667500 = DEGREE_1A_1_1982)   /* DEGREE-1A_1 */
+  (R0667700 = DEGREE_1A_2_1982)   /* DEGREE-1A_2 */
+  (R0782101 = Q13_5_TRUNC_REVISED_1982)   /* Q13-5_TRUNC_REVISED */
+  (R0816400 = HHR_LI_1982) 
+  (R0828300 = HHI_24_1982)   /* HHI-24 */
+  (R0896710 = FAMSIZE_1982) 
+  (R0898201 = HGCREV82_1982) 
+  (R0898301 = ENROLLMTREV82_1982) 
+  (R0898600 = TNFI_TRUNC_1982) 
+  (R0898700 = POVSTATUS_1982) 
+  (R0905800 = Q3_3_1983)   /* Q3-3 */
+  (R0908100 = Q3_10A_1983)   /* Q3-10A */
+  (R0908200 = DEGREE_1A_1_1983)   /* DEGREE-1A_1 */
+  (R0908400 = DEGREE_1A_2_1983)   /* DEGREE-1A_2 */
+  (R1024001 = Q13_5_TRUNC_REVISED_1983)   /* Q13-5_TRUNC_REVISED */
+  (R1024301 = Q13_9_TRUNC_REVISED_1983)   /* Q13-9_TRUNC_REVISED */
+  (R1075600 = HHI_24_1983)   /* HHI-24 */
+  (R1144410 = FAMSIZE_1983) 
+  (R1144500 = TNFI_TRUNC_1983) 
+  (R1144600 = POVSTATUS_1983) 
+  (R1145001 = HGCREV83_1983) 
+  (R1145101 = ENROLLMTREV83_1983) 
+  (R1205700 = Q3_3_1984)   /* Q3-3 */
+  (R1214300 = Q3_10A_1984)   /* Q3-10A */
+  (R1214400 = DEGREE_1A_1_1984)   /* DEGREE-1A_1 */
+  (R1214600 = DEGREE_1A_2_1984)   /* DEGREE-1A_2 */
+  (R1410701 = Q13_5_TRUNC_REVISED_1984)   /* Q13-5_TRUNC_REVISED */
+  (R1451300 = HHI_24_1984)   /* HHI-24 */
+  (R1519610 = FAMSIZE_1984) 
+  (R1519700 = TNFI_TRUNC_1984) 
+  (R1519800 = POVSTATUS_1984) 
+  (R1520201 = HGCREV84_1984) 
+  (R1520301 = ENROLLMTREV84_1984) 
+  (R1605000 = Q3_3_1985)   /* Q3-3 */
+  (R1778501 = Q13_5_TRUNC_REVISED_1985)   /* Q13-5_TRUNC_REVISED */
+  (R1778801 = Q13_9_TRUNC_REVISED_1985)   /* Q13-9_TRUNC_REVISED */
+  (R1798500 = HHI_24_1985)   /* HHI-24 */
+  (R1890210 = FAMSIZE_1985) 
+  (R1890400 = TNFI_TRUNC_1985) 
+  (R1890500 = POVSTATUS_1985) 
+  (R1890901 = HGCREV85_1985) 
+  (R1891001 = ENROLLMTREV85_1985) 
+  (R1905500 = Q3_3_1986)   /* Q3-3 */
+  (R2141601 = Q13_5_TRUNC_REVISED_1986)   /* Q13-5_TRUNC_REVISED */
+  (R2141901 = Q13_9_TRUNC_REVISED_1986)   /* Q13-9_TRUNC_REVISED */
+  (R2160100 = HHI_24_1986)   /* HHI-24 */
+  (R2257410 = FAMSIZE_1986) 
+  (R2257500 = TNFI_TRUNC_1986) 
+  (R2257600 = POVSTATUS_1986) 
+  (R2258001 = HGCREV86_1986) 
+  (R2258101 = ENROLLMTREV86_1986) 
+  (R2306400 = Q3_3_1987)   /* Q3-3 */
+  (R2350301 = Q13_5_TRUNC_REVISED_1987)   /* Q13-5_TRUNC_REVISED */
+  (R2350601 = Q13_9_TRUNC_REVISED_1987)   /* Q13-9_TRUNC_REVISED */
+  (R2444610 = FAMSIZE_1987) 
+  (R2444700 = TNFI_TRUNC_1987) 
+  (R2444900 = POVSTATUS_1987) 
+  (R2445401 = HGCREV87_1987) 
+  (R2445501 = ENROLLMTREV87_1987) 
+  (R2508900 = Q3_3_1988)   /* Q3-3 */
+  (R2509800 = Q3_10B_1988)   /* Q3-10B */
+  (R2510000 = Q3_10C_Y_1988)   /* Q3-10C_Y */
+  (R2722501 = Q13_5_TRUNC_REVISED_1988)   /* Q13-5_TRUNC_REVISED */
+  (R2722801 = Q13_9_TRUNC_REVISED_1988)   /* Q13-9_TRUNC_REVISED */
+  (R2870110 = FAMSIZE_1988) 
+  (R2870200 = TNFI_TRUNC_1988) 
+  (R2870400 = POVSTATUS_1988) 
+  (R2871101 = HGCREV88_1988) 
+  (R2871201 = ENROLLMTREV88_1988) 
+  (R2908000 = Q3_3_1989)   /* Q3-3 */
+  (R2909100 = Q3_10A_1989)   /* Q3-10A */
+  (R2909200 = Q3_10B_1989)   /* Q3-10B */
+  (R2909400 = Q3_10C_Y_1989)   /* Q3-10C_Y */
+  (R2971401 = Q13_5_TRUNC_REVISED_1989)   /* Q13-5_TRUNC_REVISED */
+  (R2971701 = Q13_9_TRUNC_REVISED_1989)   /* Q13-9_TRUNC_REVISED */
+  (R3073910 = FAMSIZE_1989) 
+  (R3074000 = TNFI_TRUNC_1989) 
+  (R3074100 = POVSTATUS_1989) 
+  (R3074801 = HGCREV89_1989) 
+  (R3074901 = ENROLLMTREV89_1989) 
+  (R3110100 = Q3_3_1990)   /* Q3-3 */
+  (R3111100 = Q3_10A_1990)   /* Q3-10A */
+  (R3111200 = Q3_10B_1990)   /* Q3-10B */
+  (R3111400 = Q3_10C_Y_1990)   /* Q3-10C_Y */
+  (R3279401 = Q13_5_TRUNC_REVISED_1990)   /* Q13-5_TRUNC_REVISED */
+  (R3279701 = Q13_9_TRUNC_REVISED_1990)   /* Q13-9_TRUNC_REVISED */
+  (R3400600 = FAMSIZE_1990) 
+  (R3400700 = TNFI_TRUNC_1990) 
+  (R3400800 = POVSTATUS_1990) 
+  (R3401501 = HGCREV90_1990) 
+  (R3401601 = ENROLLMTREV90_1990) 
+  (R3510100 = Q3_3_1991)   /* Q3-3 */
+  (R3511100 = Q3_10A_1991)   /* Q3-10A */
+  (R3511200 = Q3_10B_1991)   /* Q3-10B */
+  (R3511400 = Q3_10C_Y_1991)   /* Q3-10C_Y */
+  (R3559001 = Q13_5_TRUNC_REVISED_1991)   /* Q13-5_TRUNC_REVISED */
+  (R3559301 = Q13_9_TRUNC_REVISED_1991)   /* Q13-9_TRUNC_REVISED */
+  (R3656000 = FAMSIZE_1991) 
+  (R3656100 = TNFI_TRUNC_1991) 
+  (R3656200 = POVSTATUS_1991) 
+  (R3656901 = HGCREV91_1991) 
+  (R3657001 = ENROLLMTREV91_1991) 
+  (R3710100 = Q3_3_1992)   /* Q3-3 */
+  (R3711100 = Q3_10A_1992)   /* Q3-10A */
+  (R3711200 = Q3_10B_1992)   /* Q3-10B */
+  (R3711400 = Q3_10C_Y_1992)   /* Q3-10C_Y */
+  (R3897101 = Q13_5_TRUNC_REVISED_1992)   /* Q13-5_TRUNC_REVISED */
+  (R3897401 = Q13_9_TRUNC_REVISED_1992)   /* Q13-9_TRUNC_REVISED */
+  (R4006500 = FAMSIZE_1992) 
+  (R4006600 = TNFI_TRUNC_1992) 
+  (R4006700 = POVSTATUS_1992) 
+  (R4007401 = HGCREV92_1992) 
+  (R4007501 = ENROLLMTREV92_1992) 
+  (R4137800 = Q3_3_1993)   /* Q3-3 */
+  (R4138800 = Q3_10A_1993)   /* Q3-10A */
+  (R4138900 = Q3_10B_1993)   /* Q3-10B */
+  (R4139001 = Q3_10C_Y_1993)   /* Q3-10C~Y */
+  (R4295101 = Q13_5_TRUNC_REVISED_1993)   /* Q13-5_TRUNC_REVISED */
+  (R4295501 = Q13_9_TRUNC_REVISED_1993)   /* Q13-9_TRUNC_REVISED */
+  (R4417600 = FAMSIZE_1993) 
+  (R4417700 = TNFI_TRUNC_1993) 
+  (R4417800 = POVSTATUS_1993) 
+  (R4418501 = HGCREV93_1993) 
+  (R4418601 = ENROLLMTREV93_1993) 
+  (R4526400 = Q3_3_1994)   /* Q3-3 */
+  (R4527500 = Q3_10A_1994)   /* Q3-10A */
+  (R4527600 = Q3_10B_1994)   /* Q3-10B */
+  (R4527701 = Q3_10C_Y_1994)   /* Q3-10C~Y */
+  (R4982801 = Q13_5_TRUNC_REVISED_1994)   /* Q13-5_TRUNC_REVISED */
+  (R4983201 = Q13_9_TRUNC_REVISED_1994)   /* Q13-9_TRUNC_REVISED */
+  (R5080600 = FAMSIZE_1994) 
+  (R5080700 = TNFI_TRUNC_1994) 
+  (R5080800 = POVSTATUS_1994) 
+  (R5103900 = HGCREV94_1994) 
+  (R5104000 = ENROLLMTREV94_1994) 
+  (R5165900 = FAMSIZE_1996) 
+  (R5166000 = TNFI_TRUNC_1996) 
+  (R5166100 = POVSTATUS_1996) 
+  (R5166901 = HGCREV96_1996) 
+  (R5166902 = ENROLLMTREV96_1996) 
+  (R5221700 = Q3_3_1996)   /* Q3-3 */
+  (R5222800 = Q3_10A_1996)   /* Q3-10A */
+  (R5222900 = Q3_10B_1996)   /* Q3-10B */
+  (R5223001 = Q3_10C_Y_1996)   /* Q3-10C~Y */
+  (R5626201 = Q13_5_TRUNC_REVISED_1996)   /* Q13-5_TRUNC_REVISED */
+  (R5626601 = Q13_9_TRUNC_REVISED_1996)   /* Q13-9_TRUNC_REVISED */
+  (R5821700 = Q3_3_1998)   /* Q3-3 */
+  (R5822700 = Q3_10A_1998)   /* Q3-10A */
+  (R5822800 = Q3_10B_1998)   /* Q3-10B */
+  (R5822901 = Q3_10C_Y_1998)   /* Q3-10C~Y */
+  (R6364601 = Q13_5_TRUNC_REVISED_1998)   /* Q13-5_TRUNC_REVISED */
+  (R6365001 = Q13_9_TRUNC_REVISED_1998)   /* Q13-9_TRUNC_REVISED */
+  (R6478600 = FAMSIZE_1998) 
+  (R6478700 = TNFI_TRUNC_1998) 
+  (R6478800 = POVSTATUS_1998) 
+  (R6479600 = HGCREV98_1998) 
+  (R6479700 = ENROLLMTREV98_1998) 
+  (R6540300 = Q3_3_2000)   /* Q3-3 */
+  (R6541300 = Q3_10A_2000)   /* Q3-10A */
+  (R6541400 = Q3_10B_2000)   /* Q3-10B */
+  (R6541501 = Q3_10C_Y_2000)   /* Q3-10C~Y */
+  (R6909701 = Q13_5_TRUNC_REVISED_2000)   /* Q13-5_TRUNC_REVISED */
+  (R6911101 = Q13_9_TRUNC_REVISED_2000)   /* Q13-9_TRUNC_REVISED */
+  (R7006400 = FAMSIZE_2000) 
+  (R7006500 = TNFI_TRUNC_2000) 
+  (R7006600 = POVSTATUS_2000) 
+  (R7007300 = HGCREV00_2000) 
+  (R7007400 = ENROLLMTREV00_2000) 
+  (R7103500 = Q3_3_2002)   /* Q3-3 */
+  (R7104500 = Q3_10A_2002)   /* Q3-10A */
+  (R7104600 = Q3_10B_2002)   /* Q3-10B */
+  (R7104701 = Q3_10C_Y_2002)   /* Q3-10C~Y */
+  (R7607800 = Q13_5_TRUNC_2002)   /* Q13-5_TRUNC */
+  (R7609000 = Q13_9_TRUNC_2002)   /* Q13-9_TRUNC */
+  (R7703600 = FAMSIZE_2002) 
+  (R7703700 = TNFI_TRUNC_2002) 
+  (R7703900 = POVSTATUS_2002) 
+  (R7704600 = HGCREV02_2002) 
+  (R7704700 = ENROLLMTREV02_2002) 
+  (R7810400 = Q3_3_2004)   /* Q3-3 */
+  (R7811400 = Q3_10A_2004)   /* Q3-10A */
+  (R7811500 = Q3_10B_2004)   /* Q3-10B */
+  (R7811601 = Q3_10C_Y_2004)   /* Q3-10C~Y */
+  (R8316300 = Q13_5_TRUNC_2004)   /* Q13-5_TRUNC */
+  (R8318200 = Q13_9_TRUNC_2004)   /* Q13-9_TRUNC */
+  (R8496000 = FAMSIZE_2004) 
+  (R8496100 = TNFI_TRUNC_2004) 
+  (R8496300 = POVSTATUS_2004) 
+  (R8497000 = HGCREV04_2004) 
+  (R8497100 = ENROLLMTREV04_2004) 
+  (T0014300 = Q3_3_2006)   /* Q3-3 */
+  (T0015300 = Q3_10A_2006)   /* Q3-10A */
+  (T0015400 = Q3_10B_2006)   /* Q3-10B */
+  (T0015501 = Q3_10C_Y_2006)   /* Q3-10C~Y */
+  (T0912400 = Q13_5_TRUNC_2006)   /* Q13-5_TRUNC */
+  (T0913900 = Q13_9_TRUNC_2006)   /* Q13-9_TRUNC */
+  (T0987600 = FAMSIZE_2006) 
+  (T0987800 = TNFI_TRUNC_2006) 
+  (T0987900 = POVSTATUS_2006) 
+  (T0988800 = HGCREV06_2006) 
+  (T0988900 = ENROLLMTREV06_2006) 
+  (T1214200 = Q3_3_2008)   /* Q3-3 */
+  (T1215300 = Q3_10A_2008)   /* Q3-10A */
+  (T1215400 = Q3_10B_2008)   /* Q3-10B */
+  (T1215501 = Q3_10C_Y_2008)   /* Q3-10C~Y */
+  (T1215600 = Q3_10D_2008)   /* Q3-10D */
+  (T1215701 = Q3_10E_Y_2008)   /* Q3-10E~Y */
+  (T2076700 = Q13_5_TRUNC_2008)   /* Q13-5_TRUNC */
+  (T2078800 = Q13_9_TRUNC_2008)   /* Q13-9_TRUNC */
+  (T2209900 = FAMSIZE_2008) 
+  (T2210000 = TNFI_TRUNC_2008) 
+  (T2210100 = POVSTATUS_2008) 
+  (T2210700 = HGCREV08_2008) 
+  (T2272700 = Q3_3_2010)   /* Q3-3 */
+  (T2273800 = Q3_10A_2010)   /* Q3-10A */
+  (T2273900 = Q3_10B_2010)   /* Q3-10B */
+  (T2274001 = Q3_10C_Y_2010)   /* Q3-10C~Y */
+  (T2274100 = Q3_10D_2010)   /* Q3-10D */
+  (T2274201 = Q3_10E_Y_2010)   /* Q3-10E~Y */
+  (T3045300 = Q13_5_TRUNC_2010)   /* Q13-5_TRUNC */
+  (T3047500 = Q13_9_TRUNC_2010)   /* Q13-9_TRUNC */
+  (T3107700 = FAMSIZE_2010) 
+  (T3107800 = TNFI_TRUNC_2010) 
+  (T3108000 = POVSTATUS_2010) 
+  (T3108600 = HGCREV10_2010) 
+  (T3212800 = Q3_3_2012)   /* Q3-3 */
+  (T3213900 = Q3_10A_2012)   /* Q3-10A */
+  (T3214000 = Q3_10B_2012)   /* Q3-10B */
+  (T3214101 = Q3_10C_Y_2012)   /* Q3-10C~Y */
+  (T3214200 = Q3_10D_2012)   /* Q3-10D */
+  (T3214301 = Q3_10E_Y_2012)   /* Q3-10E~Y */
+  (T3977400 = Q13_5_TRUNC_2012)   /* Q13-5_TRUNC */
+  (T3979400 = Q13_9_TRUNC_2012)   /* Q13-9_TRUNC */
+  (T4112200 = FAMSIZE_2012) 
+  (T4112300 = TNFI_TRUNC_2012) 
+  (T4112500 = POVSTATUS_2012) 
+  (T4113100 = HGCREV12_2012) 
+  (T4201000 = Q3_3_2014)   /* Q3-3 */
+  (T4202100 = Q3_10A_2014)   /* Q3-10A */
+  (T4202200 = Q3_10B_2014)   /* Q3-10B */
+  (T4202301 = Q3_10C_Y_2014)   /* Q3-10C~Y */
+  (T4202500 = Q3_10D_2014)   /* Q3-10D */
+  (T4202601 = Q3_10E_Y_2014)   /* Q3-10E~Y */
+  (T4915800 = Q13_5_TRUNC_2014)   /* Q13-5_TRUNC */
+  (T4917800 = Q13_9_TRUNC_2014)   /* Q13-9_TRUNC */
+  (T5022500 = FAMSIZE_2014) 
+  (T5022600 = TNFI_TRUNC_2014) 
+  (T5022800 = POVSTATUS_2014) 
+  (T5023500 = HGCREV14_2014) 
+  (T5176000 = Q3_3_2016)   /* Q3-3 */
+  (T5177100 = Q3_10A_2016)   /* Q3-10A */
+  (T5177200 = Q3_10B_2016)   /* Q3-10B */
+  (T5177301 = Q3_10C_Y_2016)   /* Q3-10C~Y */
+  (T5177500 = Q3_10D_2016)   /* Q3-10D */
+  (T5177601 = Q3_10E_Y_2016)   /* Q3-10E~Y */
+  (T5619500 = Q13_5_TRUNC_2016)   /* Q13-5_TRUNC */
+  (T5621700 = Q13_9_TRUNC_2016)   /* Q13-9_TRUNC */
+  (T5770700 = FAMSIZE_2016) 
+  (T5770800 = TNFI_TRUNC_2016) 
+  (T5770900 = POVSTATUS_2016) 
+  (T5771400 = HGCREV16_2016) 
+.
+  /* *end* */
+
+descriptives all.
+
+*--- Tabulations using reference number variables.
+*freq var=R0000100, 
+  R0006500, 
+  R0007900, 
+  R0008500, 
+  R0009100, 
+  R0017200, 
+  R0023500, 
+  R0153710, 
+  R0173600, 
+  R0187900, 
+  R0214700, 
+  R0214800, 
+  R0215100, 
+  R0216100, 
+  R0216500, 
+  R0216601, 
+  R0216701, 
+  R0217502, 
+  R0217900, 
+  R0217910, 
+  R0229100, 
+  R0297300, 
+  R0297400, 
+  R0298000, 
+  R0402700, 
+  R0405210, 
+  R0406010, 
+  R0406100, 
+  R0406401, 
+  R0406501, 
+  R0417300, 
+  R0419800, 
+  R0419900, 
+  R0420100, 
+  R0602400, 
+  R0618301, 
+  R0618410, 
+  R0618500, 
+  R0618901, 
+  R0619001, 
+  R0647103, 
+  R0664400, 
+  R0667400, 
+  R0667500, 
+  R0667700, 
+  R0782101, 
+  R0816400, 
+  R0828300, 
+  R0896710, 
+  R0898201, 
+  R0898301, 
+  R0898600, 
+  R0898700, 
+  R0905800, 
+  R0908100, 
+  R0908200, 
+  R0908400, 
+  R1024001, 
+  R1024301, 
+  R1075600, 
+  R1144410, 
+  R1144500, 
+  R1144600, 
+  R1145001, 
+  R1145101, 
+  R1205700, 
+  R1214300, 
+  R1214400, 
+  R1214600, 
+  R1410701, 
+  R1451300, 
+  R1519610, 
+  R1519700, 
+  R1519800, 
+  R1520201, 
+  R1520301, 
+  R1605000, 
+  R1778501, 
+  R1778801, 
+  R1798500, 
+  R1890210, 
+  R1890400, 
+  R1890500, 
+  R1890901, 
+  R1891001, 
+  R1905500, 
+  R2141601, 
+  R2141901, 
+  R2160100, 
+  R2257410, 
+  R2257500, 
+  R2257600, 
+  R2258001, 
+  R2258101, 
+  R2306400, 
+  R2350301, 
+  R2350601, 
+  R2444610, 
+  R2444700, 
+  R2444900, 
+  R2445401, 
+  R2445501, 
+  R2508900, 
+  R2509800, 
+  R2510000, 
+  R2722501, 
+  R2722801, 
+  R2870110, 
+  R2870200, 
+  R2870400, 
+  R2871101, 
+  R2871201, 
+  R2908000, 
+  R2909100, 
+  R2909200, 
+  R2909400, 
+  R2971401, 
+  R2971701, 
+  R3073910, 
+  R3074000, 
+  R3074100, 
+  R3074801, 
+  R3074901, 
+  R3110100, 
+  R3111100, 
+  R3111200, 
+  R3111400, 
+  R3279401, 
+  R3279701, 
+  R3400600, 
+  R3400700, 
+  R3400800, 
+  R3401501, 
+  R3401601, 
+  R3510100, 
+  R3511100, 
+  R3511200, 
+  R3511400, 
+  R3559001, 
+  R3559301, 
+  R3656000, 
+  R3656100, 
+  R3656200, 
+  R3656901, 
+  R3657001, 
+  R3710100, 
+  R3711100, 
+  R3711200, 
+  R3711400, 
+  R3897101, 
+  R3897401, 
+  R4006500, 
+  R4006600, 
+  R4006700, 
+  R4007401, 
+  R4007501, 
+  R4137800, 
+  R4138800, 
+  R4138900, 
+  R4139001, 
+  R4295101, 
+  R4295501, 
+  R4417600, 
+  R4417700, 
+  R4417800, 
+  R4418501, 
+  R4418601, 
+  R4526400, 
+  R4527500, 
+  R4527600, 
+  R4527701, 
+  R4982801, 
+  R4983201, 
+  R5080600, 
+  R5080700, 
+  R5080800, 
+  R5103900, 
+  R5104000, 
+  R5165900, 
+  R5166000, 
+  R5166100, 
+  R5166901, 
+  R5166902, 
+  R5221700, 
+  R5222800, 
+  R5222900, 
+  R5223001, 
+  R5626201, 
+  R5626601, 
+  R5821700, 
+  R5822700, 
+  R5822800, 
+  R5822901, 
+  R6364601, 
+  R6365001, 
+  R6478600, 
+  R6478700, 
+  R6478800, 
+  R6479600, 
+  R6479700, 
+  R6540300, 
+  R6541300, 
+  R6541400, 
+  R6541501, 
+  R6909701, 
+  R6911101, 
+  R7006400, 
+  R7006500, 
+  R7006600, 
+  R7007300, 
+  R7007400, 
+  R7103500, 
+  R7104500, 
+  R7104600, 
+  R7104701, 
+  R7607800, 
+  R7609000, 
+  R7703600, 
+  R7703700, 
+  R7703900, 
+  R7704600, 
+  R7704700, 
+  R7810400, 
+  R7811400, 
+  R7811500, 
+  R7811601, 
+  R8316300, 
+  R8318200, 
+  R8496000, 
+  R8496100, 
+  R8496300, 
+  R8497000, 
+  R8497100, 
+  T0014300, 
+  T0015300, 
+  T0015400, 
+  T0015501, 
+  T0912400, 
+  T0913900, 
+  T0987600, 
+  T0987800, 
+  T0987900, 
+  T0988800, 
+  T0988900, 
+  T1214200, 
+  T1215300, 
+  T1215400, 
+  T1215501, 
+  T1215600, 
+  T1215701, 
+  T2076700, 
+  T2078800, 
+  T2209900, 
+  T2210000, 
+  T2210100, 
+  T2210700, 
+  T2272700, 
+  T2273800, 
+  T2273900, 
+  T2274001, 
+  T2274100, 
+  T2274201, 
+  T3045300, 
+  T3047500, 
+  T3107700, 
+  T3107800, 
+  T3108000, 
+  T3108600, 
+  T3212800, 
+  T3213900, 
+  T3214000, 
+  T3214101, 
+  T3214200, 
+  T3214301, 
+  T3977400, 
+  T3979400, 
+  T4112200, 
+  T4112300, 
+  T4112500, 
+  T4113100, 
+  T4201000, 
+  T4202100, 
+  T4202200, 
+  T4202301, 
+  T4202500, 
+  T4202601, 
+  T4915800, 
+  T4917800, 
+  T5022500, 
+  T5022600, 
+  T5022800, 
+  T5023500, 
+  T5176000, 
+  T5177100, 
+  T5177200, 
+  T5177301, 
+  T5177500, 
+  T5177601, 
+  T5619500, 
+  T5621700, 
+  T5770700, 
+  T5770800, 
+  T5770900, 
+  T5771400.
+
+*--- Tabulations using qname variables.
+*freq var=CASEID_1979, 
+  HGC_MOTHER_1979, 
+  HGC_FATHER_1979, 
+  FAM_27_1979, 
+  FAM_28A_1979, 
+  Q3_3_1979, 
+  SCHOOL_31_1979, 
+  ROTTER_SCORE_1979, 
+  SAMPLE_ID_1979, 
+  HHI_24_1979, 
+  SAMPLE_RACE_78SCRN, 
+  SAMPLE_SEX_1979, 
+  URBAN_RURAL_1979, 
+  SAMPWEIGHT_1979, 
+  AGEATINT_1979, 
+  ENROLLMTREV79_1979, 
+  HGCREV79_1979, 
+  FAMSIZE_1979, 
+  TNFI_TRUNC_1979, 
+  POVSTATUS_1979, 
+  Q3_3_1980, 
+  Q3_10A_1980, 
+  DEGREE_1A_1_1980, 
+  DEGREE_1A_2_1980, 
+  HHI_24_1980, 
+  FAMSIZE_1980, 
+  TNFI_TRUNC_1980, 
+  POVSTATUS_1980, 
+  HGCREV80_1980, 
+  ENROLLMTREV80_1980, 
+  Q3_3_1981, 
+  Q3_10A_1981, 
+  DEGREE_1A_1_1981, 
+  DEGREE_1A_2_1981, 
+  HHR_LI_1981, 
+  AFQT_3_1981, 
+  TNFI_TRUNC_1981, 
+  POVSTATUS_1981, 
+  HGCREV81_1981, 
+  ENROLLMTREV81_1981, 
+  FAMSIZE_1981, 
+  Q3_3_1982, 
+  Q3_10A_1982, 
+  DEGREE_1A_1_1982, 
+  DEGREE_1A_2_1982, 
+  Q13_5_TRUNC_REVISED_1982, 
+  HHR_LI_1982, 
+  HHI_24_1982, 
+  FAMSIZE_1982, 
+  HGCREV82_1982, 
+  ENROLLMTREV82_1982, 
+  TNFI_TRUNC_1982, 
+  POVSTATUS_1982, 
+  Q3_3_1983, 
+  Q3_10A_1983, 
+  DEGREE_1A_1_1983, 
+  DEGREE_1A_2_1983, 
+  Q13_5_TRUNC_REVISED_1983, 
+  Q13_9_TRUNC_REVISED_1983, 
+  HHI_24_1983, 
+  FAMSIZE_1983, 
+  TNFI_TRUNC_1983, 
+  POVSTATUS_1983, 
+  HGCREV83_1983, 
+  ENROLLMTREV83_1983, 
+  Q3_3_1984, 
+  Q3_10A_1984, 
+  DEGREE_1A_1_1984, 
+  DEGREE_1A_2_1984, 
+  Q13_5_TRUNC_REVISED_1984, 
+  HHI_24_1984, 
+  FAMSIZE_1984, 
+  TNFI_TRUNC_1984, 
+  POVSTATUS_1984, 
+  HGCREV84_1984, 
+  ENROLLMTREV84_1984, 
+  Q3_3_1985, 
+  Q13_5_TRUNC_REVISED_1985, 
+  Q13_9_TRUNC_REVISED_1985, 
+  HHI_24_1985, 
+  FAMSIZE_1985, 
+  TNFI_TRUNC_1985, 
+  POVSTATUS_1985, 
+  HGCREV85_1985, 
+  ENROLLMTREV85_1985, 
+  Q3_3_1986, 
+  Q13_5_TRUNC_REVISED_1986, 
+  Q13_9_TRUNC_REVISED_1986, 
+  HHI_24_1986, 
+  FAMSIZE_1986, 
+  TNFI_TRUNC_1986, 
+  POVSTATUS_1986, 
+  HGCREV86_1986, 
+  ENROLLMTREV86_1986, 
+  Q3_3_1987, 
+  Q13_5_TRUNC_REVISED_1987, 
+  Q13_9_TRUNC_REVISED_1987, 
+  FAMSIZE_1987, 
+  TNFI_TRUNC_1987, 
+  POVSTATUS_1987, 
+  HGCREV87_1987, 
+  ENROLLMTREV87_1987, 
+  Q3_3_1988, 
+  Q3_10B_1988, 
+  Q3_10C_Y_1988, 
+  Q13_5_TRUNC_REVISED_1988, 
+  Q13_9_TRUNC_REVISED_1988, 
+  FAMSIZE_1988, 
+  TNFI_TRUNC_1988, 
+  POVSTATUS_1988, 
+  HGCREV88_1988, 
+  ENROLLMTREV88_1988, 
+  Q3_3_1989, 
+  Q3_10A_1989, 
+  Q3_10B_1989, 
+  Q3_10C_Y_1989, 
+  Q13_5_TRUNC_REVISED_1989, 
+  Q13_9_TRUNC_REVISED_1989, 
+  FAMSIZE_1989, 
+  TNFI_TRUNC_1989, 
+  POVSTATUS_1989, 
+  HGCREV89_1989, 
+  ENROLLMTREV89_1989, 
+  Q3_3_1990, 
+  Q3_10A_1990, 
+  Q3_10B_1990, 
+  Q3_10C_Y_1990, 
+  Q13_5_TRUNC_REVISED_1990, 
+  Q13_9_TRUNC_REVISED_1990, 
+  FAMSIZE_1990, 
+  TNFI_TRUNC_1990, 
+  POVSTATUS_1990, 
+  HGCREV90_1990, 
+  ENROLLMTREV90_1990, 
+  Q3_3_1991, 
+  Q3_10A_1991, 
+  Q3_10B_1991, 
+  Q3_10C_Y_1991, 
+  Q13_5_TRUNC_REVISED_1991, 
+  Q13_9_TRUNC_REVISED_1991, 
+  FAMSIZE_1991, 
+  TNFI_TRUNC_1991, 
+  POVSTATUS_1991, 
+  HGCREV91_1991, 
+  ENROLLMTREV91_1991, 
+  Q3_3_1992, 
+  Q3_10A_1992, 
+  Q3_10B_1992, 
+  Q3_10C_Y_1992, 
+  Q13_5_TRUNC_REVISED_1992, 
+  Q13_9_TRUNC_REVISED_1992, 
+  FAMSIZE_1992, 
+  TNFI_TRUNC_1992, 
+  POVSTATUS_1992, 
+  HGCREV92_1992, 
+  ENROLLMTREV92_1992, 
+  Q3_3_1993, 
+  Q3_10A_1993, 
+  Q3_10B_1993, 
+  Q3_10C_Y_1993, 
+  Q13_5_TRUNC_REVISED_1993, 
+  Q13_9_TRUNC_REVISED_1993, 
+  FAMSIZE_1993, 
+  TNFI_TRUNC_1993, 
+  POVSTATUS_1993, 
+  HGCREV93_1993, 
+  ENROLLMTREV93_1993, 
+  Q3_3_1994, 
+  Q3_10A_1994, 
+  Q3_10B_1994, 
+  Q3_10C_Y_1994, 
+  Q13_5_TRUNC_REVISED_1994, 
+  Q13_9_TRUNC_REVISED_1994, 
+  FAMSIZE_1994, 
+  TNFI_TRUNC_1994, 
+  POVSTATUS_1994, 
+  HGCREV94_1994, 
+  ENROLLMTREV94_1994, 
+  FAMSIZE_1996, 
+  TNFI_TRUNC_1996, 
+  POVSTATUS_1996, 
+  HGCREV96_1996, 
+  ENROLLMTREV96_1996, 
+  Q3_3_1996, 
+  Q3_10A_1996, 
+  Q3_10B_1996, 
+  Q3_10C_Y_1996, 
+  Q13_5_TRUNC_REVISED_1996, 
+  Q13_9_TRUNC_REVISED_1996, 
+  Q3_3_1998, 
+  Q3_10A_1998, 
+  Q3_10B_1998, 
+  Q3_10C_Y_1998, 
+  Q13_5_TRUNC_REVISED_1998, 
+  Q13_9_TRUNC_REVISED_1998, 
+  FAMSIZE_1998, 
+  TNFI_TRUNC_1998, 
+  POVSTATUS_1998, 
+  HGCREV98_1998, 
+  ENROLLMTREV98_1998, 
+  Q3_3_2000, 
+  Q3_10A_2000, 
+  Q3_10B_2000, 
+  Q3_10C_Y_2000, 
+  Q13_5_TRUNC_REVISED_2000, 
+  Q13_9_TRUNC_REVISED_2000, 
+  FAMSIZE_2000, 
+  TNFI_TRUNC_2000, 
+  POVSTATUS_2000, 
+  HGCREV00_2000, 
+  ENROLLMTREV00_2000, 
+  Q3_3_2002, 
+  Q3_10A_2002, 
+  Q3_10B_2002, 
+  Q3_10C_Y_2002, 
+  Q13_5_TRUNC_2002, 
+  Q13_9_TRUNC_2002, 
+  FAMSIZE_2002, 
+  TNFI_TRUNC_2002, 
+  POVSTATUS_2002, 
+  HGCREV02_2002, 
+  ENROLLMTREV02_2002, 
+  Q3_3_2004, 
+  Q3_10A_2004, 
+  Q3_10B_2004, 
+  Q3_10C_Y_2004, 
+  Q13_5_TRUNC_2004, 
+  Q13_9_TRUNC_2004, 
+  FAMSIZE_2004, 
+  TNFI_TRUNC_2004, 
+  POVSTATUS_2004, 
+  HGCREV04_2004, 
+  ENROLLMTREV04_2004, 
+  Q3_3_2006, 
+  Q3_10A_2006, 
+  Q3_10B_2006, 
+  Q3_10C_Y_2006, 
+  Q13_5_TRUNC_2006, 
+  Q13_9_TRUNC_2006, 
+  FAMSIZE_2006, 
+  TNFI_TRUNC_2006, 
+  POVSTATUS_2006, 
+  HGCREV06_2006, 
+  ENROLLMTREV06_2006, 
+  Q3_3_2008, 
+  Q3_10A_2008, 
+  Q3_10B_2008, 
+  Q3_10C_Y_2008, 
+  Q3_10D_2008, 
+  Q3_10E_Y_2008, 
+  Q13_5_TRUNC_2008, 
+  Q13_9_TRUNC_2008, 
+  FAMSIZE_2008, 
+  TNFI_TRUNC_2008, 
+  POVSTATUS_2008, 
+  HGCREV08_2008, 
+  Q3_3_2010, 
+  Q3_10A_2010, 
+  Q3_10B_2010, 
+  Q3_10C_Y_2010, 
+  Q3_10D_2010, 
+  Q3_10E_Y_2010, 
+  Q13_5_TRUNC_2010, 
+  Q13_9_TRUNC_2010, 
+  FAMSIZE_2010, 
+  TNFI_TRUNC_2010, 
+  POVSTATUS_2010, 
+  HGCREV10_2010, 
+  Q3_3_2012, 
+  Q3_10A_2012, 
+  Q3_10B_2012, 
+  Q3_10C_Y_2012, 
+  Q3_10D_2012, 
+  Q3_10E_Y_2012, 
+  Q13_5_TRUNC_2012, 
+  Q13_9_TRUNC_2012, 
+  FAMSIZE_2012, 
+  TNFI_TRUNC_2012, 
+  POVSTATUS_2012, 
+  HGCREV12_2012, 
+  Q3_3_2014, 
+  Q3_10A_2014, 
+  Q3_10B_2014, 
+  Q3_10C_Y_2014, 
+  Q3_10D_2014, 
+  Q3_10E_Y_2014, 
+  Q13_5_TRUNC_2014, 
+  Q13_9_TRUNC_2014, 
+  FAMSIZE_2014, 
+  TNFI_TRUNC_2014, 
+  POVSTATUS_2014, 
+  HGCREV14_2014, 
+  Q3_3_2016, 
+  Q3_10A_2016, 
+  Q3_10B_2016, 
+  Q3_10C_Y_2016, 
+  Q3_10D_2016, 
+  Q3_10E_Y_2016, 
+  Q13_5_TRUNC_2016, 
+  Q13_9_TRUNC_2016, 
+  FAMSIZE_2016, 
+  TNFI_TRUNC_2016, 
+  POVSTATUS_2016, 
+  HGCREV16_2016.

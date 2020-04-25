@@ -12,6 +12,7 @@ library(tidyverse)
 library(rstanarm)
 library(Hmisc)
 library(stargazer)
+
 ```
 
 ### Invest in Women: How A Mother's Education Affect Her Children's Future
@@ -38,7 +39,7 @@ This project will use a portion of the National Longitudinal Survey (1979 cohort
 
 ```{r data setup}
 
-load("nlsy79/nlsy79.RData")
+load("nlsy79_prop.RData")
 
 
 mothers <- nlsy79 %>% 
