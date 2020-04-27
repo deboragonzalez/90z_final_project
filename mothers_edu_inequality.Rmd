@@ -3,7 +3,7 @@ title: 'Invest in Women'
 subtitle: 'How A Mother''s Education Affect Her Children''s Future'
 author: "Debora Gonzalez"
 date: "4/24/2020"
-output: pdf_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -44,13 +44,18 @@ Inspired by Beller (2009), I would like to take a look at the ways in which educ
 (c) For whom does mother's education matter most? Sons? Daughters? Children raised in single-mother households? Or only daughters raised in single-mother households?
 
 
-To explore these questions I am building models that explore the association between a mother's education and her children's outcome and introducing controls such as father's education, college completion, parental family income, parental family income quantile, child's sex, etc. Ideally, I will be able to observe how the mother's education affect her child's educational and financial outcome as a whole and also when controlling for some of these other factors. I may put special emphasis in the relationship mothers have to daughters outcomes versus that of sons in different family structures, and theorize the reasons behind any patterns I may find. Ultimately, the purpose of this project is to explore the ways in which women influence social mobility for future generations.
+To explore these questions I am building models that explore the association between a mother's education and her children's outcome and introducing explanatory variable controls such as father's education, college completion, parental family income, parental family income quantile, child's sex, etc. Ideally, I will be able to observe how the mother's education affect her child's educational and financial outcome as a whole and also when controlling for some of these other factors. I may put special emphasis in the relationship mothers have to daughters outcomes versus that of sons in different family structures, and theorize the reasons behind any patterns I may find. Ultimately, the purpose of this project is to explore the ways in which women influence social mobility for future generations.
 
 \newpage
 
 # Data & Methods
 
-This project will use the National Longitudinal Survey (1979 cohort) to explore the role of mothers in the social and economic mobility of their children.
+This project will use the National Longitudinal Survey (1979 cohort) to explore the role of mothers in the social and economic mobility of their children. I will be conducting OLS regressions to estimate the association between explanatory variables and expected outcomes, in this case, the education or income of the child. The research focuses on 'mother's education' as the key explanatory variable. In most cases, a woman's educational attainment, unlike occupation or earnings, is "temporally" prior to her marriage (or motherhood) and thus not directly affected by her husband/partner's socioeconomic status. This means that we are able to treat other indicators of a child's SES (e.g., parental occupation/income) as potential mediators that transmit the effect of mother's education. So, when we control for these other indicators of parental SES such as family income, the regression coeffcient of mother's education could be interpreted as a direct effect net of of these other pathways (Zhou, 2020). 
+
+
+Similarly, the educational attainment, occupation, cognitive ability of the child could also be seen as mediators, i.e., intervening variables between mother's education and child income.
+
+
 
 \newpage
 # Analysis
@@ -70,16 +75,106 @@ dataset1 <- nlsy79 %>%
                                age_1979 == 15 ~ hgc_1989,
                                age_1979 == 16 ~ hgc_1988,
                                age_1979 == 17 ~ hgc_1987,
-                               age_1979 == 18 ~ hgc_1986))
-#  filter(tnfi_trunc_2016 > 0) %>% 
-#  mutate(logfaminc16 = log(tnfi_trunc_2016))
+                               age_1979 == 18 ~ hgc_1986),
+         female = if_else(sex_1979 == 2, 1, 0)) %>% 
+  filter(faminc_2016 > 0) %>% 
+  mutate(logfaminc16 = log(faminc_2016))
+
+```
+
+### Mother's Education & Child's Income
+
+This regression explores the relationship between a mother's education and child's income in 2016. Note that this model is controlling for college completion by age 25, family income in 1979, and sex.
+
+```{r simple regression table, results = "asis"}
+
+m1 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_age25 + faminc_1979 + sex_1979, 
+             data = dataset1, 
+             weights = sampweight_1979)
+
+stargazer(m1, type = "html", digits = 3,
+              title = "Mother's Education & her Children's Family Income in 2016",
+              omit.summary.stat = c("n", "Min", "Max"),
+              covariate.labels=c("Mother's Educ", "Educ by Age 25", "Fam. Income 1979", "Sex: Female"),
+              dep.var.labels = "Family Income in 2016")
+```
+
+### Mother's vs. Father's Education Effect on Child's Income (a)
+
+```{r parent_comp, results = "asis"}
+
+
+
+m2 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_father_1979 + hgc_age25 + faminc_1979 + sex_1979, 
+             data = dataset1, 
+             weights = sampweight_1979)
+
+
+stargazer(m2, type = "html", digits = 3,
+              title = "Mother's vs. Father's Education Effect on their Children's Family Income in 2016",
+              omit.summary.stat = c("n", "Min", "Max"),
+              covariate.labels=c("Mother's Edu", "Father's Edu", "Edu by Age 25", "Fam. Income 1979", "Sex: Female"),
+              dep.var.labels = "Family Income in 2016")
+```
+
+###  Mother's vs. Father's Education Effect on Child's Education (b)
+
+```{r parent_comp_edu, results = "asis"}
+
+
+m3 <- lm(hgc_age25 ~ hgc_mother_1979 + hgc_father_1979 + faminc_1979 + sex_1979, 
+             data = dataset1, 
+             weights = sampweight_1979)
+
+stargazer(m3, type = "html", digits = 3,
+              title = "Mother's vs. Father's Education Effect on their Children's Education by Age 25",
+              omit.summary.stat = c("n", "Min", "Max"),
+              covariate.labels=c("Mother's Edu", "Father's Edu", "Fam. Income 1979", "Sex: Female"),
+              dep.var.labels = "Education by Age 25")
+
+```
+### Heterogeneity: For Whom Does Mother's Education Matter Most?
+
+```{r hetero, results="asis"}
+  
+  
+dataset2 <- dataset1 %>% 
+  filter(father_absent_1979 != -4)
+  
+
+# I'm not sure what -4 refers to, but the variable is meant to be a binary for
+# the qst Father live apart? No =0, Yes = 1.
+
+m4 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_father_1979 +  hgc_age25 + faminc_1979 + hgc_mother_1979*sex_1979, 
+             data = dataset1, 
+             weights = sampweight_1979)
+
+
+# for sex_1979 Male = 1, Female = 2
+
+m5 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_father_1979 +  hgc_age25 + faminc_1979 + hgc_mother_1979*father_absent_1979, 
+             data = dataset2, 
+             weights = sampweight_1979)
+
+
+stargazer(m4,m5, type = "html", digits = 3,
+              title = "Mother's Education Heterogeneous Effect on their Children's Family Income in 2016",
+              omit.summary.stat = c("n", "Min", "Max"),
+              covariate.labels=c("Mother's Edu", "Father's Edu", "Edu by Age 25", "Fam. Income 1979", "Sex: Female", "Interaction: Mother's Edu & SexFemale", "Absent Father Household", "Interaction: Mother's Edu & Absent Father Household"),
+              dep.var.labels = "Family Income in 2016")
+
+
+# stargazer(m4, m5, type = "text")
+
 
 ```
 
 
 # Conclusions
 
-### References
+
+
+# References
 
 Beller, E. (2009). Bringing Intergenerational Social Mobility Research into the Twenty-first Century: Why Mothers Matter. American Sociological Review, 74(4), 507–528. https://doi.org/10.1177/000312240907400401.
 
