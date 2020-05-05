@@ -13,6 +13,9 @@ library(tidyverse)
 library(rstanarm)
 library(Hmisc)
 library(stargazer)
+library(broom)
+library(cowplot)
+library(ggplot2)
 
 ```
 
@@ -40,7 +43,7 @@ These amazing statistics highlight an interesting question about the effect of a
 Inspired by Beller (2009), I would like to take a look at the ways in which educational attainment and/or social class of mothers affect(s) their children's outcomes. I hope to construct a few models to explore these main questions:
 
 (a) Overall, to what extent does mother's education matter for a child's socioeconomic status? How does it compare to father's education? 
-(b)Overall, to what extent does mother's education matter for a child's education outcome? How does it compare to father's education? 
+(b) Overall, to what extent does mother's education matter for a child's education outcome? How does it compare to father's education? 
 (c) For whom does mother's education matter most? Sons? Daughters? Children raised in single-mother households? Or only daughters raised in single-mother households?
 
 
@@ -82,20 +85,189 @@ dataset1 <- nlsy79 %>%
 
 ```
 
+### Mother's Overall Effect
+
+
+```{r overall}
+m0 <- lm(logfaminc16 ~ hgc_mother_1979, 
+         data = dataset1, 
+         weights = sampweight_1979)
+
+
+m0.5 <- lm(hgc_age25 ~ hgc_mother_1979,
+           data = dataset1, 
+           weights = sampweight_1979)
+
+
+stargazer(m0, m0.5, type = "text", digits = 3,
+              title = "Mother's Education Impact on her Children",
+              omit.summary.stat = c("n", "Min", "Max"),
+              covariate.labels=c("Mother's Educ"),
+              dep.var.labels = c("Family Income in 2016", "Child's Education by Age 25"))
+```
+
+
+```{r dad_effect}
+
+m0.2 <- lm(logfaminc16 ~ hgc_father_1979, 
+         data = dataset1, 
+         weights = sampweight_1979)
+
+
+m0.52 <- lm(hgc_age25 ~ hgc_father_1979,
+           data = dataset1, 
+           weights = sampweight_1979)
+
+
+
+
+```
+
+
+```{r overall_graphic}
+
+# plot m0 using absolute dollars on the y axis
+
+fig1a <- augment(m0) %>%
+  ggplot(aes(x = hgc_mother_1979, y = exp(.fitted)))+
+  geom_line() +
+  xlim(0, 20) +
+  geom_ribbon(aes(ymin = exp(.fitted - 1.96 * .se.fit),
+                  ymax = exp(.fitted + 1.96 * .se.fit)),
+              alpha = 0.3) +
+  labs(title = "",
+       subtitle = "",
+       x = "Highest Grade Completed by Mother in 1979",
+       y = "Predicted Child's Family Income in '16") +
+  theme_classic()
+
+# plot m0.5 using child's year of schooling on the y axis
+
+fig1b <- augment(m0.5) %>%
+  ggplot(aes(x = hgc_mother_1979, y = .fitted))+
+  geom_line() +
+  xlim(0, 20) +
+  geom_ribbon(aes(ymin = .fitted - 1.96 * .se.fit,
+                  ymax = .fitted + 1.96 * .se.fit),
+              alpha = 0.3) +
+  labs(title = "",
+       subtitle = "",
+       x = "Highest Grade Completed by Mother in 1979",
+       y = "Highest Grade Completed by Child by Age 25") +
+  theme_classic()
+
+
+plot_fig <- plot_grid(fig1a, fig1b, labels = "AUTO")
+
+# now add the title
+title <- ggdraw() + 
+  draw_label(
+    "Overall Effect of Mother's Education on Child's Outcomes",
+    fontface = 'bold',
+    x = 0,
+    hjust = 0
+  ) +
+  theme(plot.margin = margin(0, 0, 0, 7))
+    
+    # add margin on the left of the drawing canvas,
+    # so title is aligned with left edge of first plot
+    
+   
+
+plot_grid(title, plot_fig, ncol = 1,
+  
+  # rel_heights values control vertical title margins
+  
+  rel_heights = c(0.1, 1))
+```
+
+
+```{r father_graphic}
+
+
+# plot m0.2 using absolute dollars on the y axis
+
+fig2a <- augment(m0.2) %>%
+  ggplot(aes(x = hgc_father_1979, y = exp(.fitted)))+
+  geom_line() +
+  xlim(0, 20) +
+  geom_ribbon(aes(ymin = exp(.fitted - 1.96 * .se.fit),
+                  ymax = exp(.fitted + 1.96 * .se.fit)),
+              alpha = 0.3) +
+  labs(title = "",
+       subtitle = "",
+       x = "Highest Grade Completed by Father in 1979",
+       y = "Predicted Child's Family Income in '16") +
+  theme_classic()
+
+# plot m0.52 using child's year of schooling on the y axis
+
+fig2b <- augment(m0.52) %>%
+  ggplot(aes(x = hgc_father_1979, y = .fitted))+
+  geom_line() +
+  xlim(0, 20) +
+  geom_ribbon(aes(ymin = .fitted - 1.96 * .se.fit,
+                  ymax = .fitted + 1.96 * .se.fit),
+              alpha = 0.3) +
+  labs(title = "",
+       subtitle = "",
+       x = "Highest Grade Completed by Father in 1979",
+       y = "Highest Grade Completed by Child by Age 25") +
+  theme_classic()
+
+
+
+plot_fig2 <- plot_grid(fig2a, fig2b, labels = "AUTO")
+
+# now add the title
+title <- ggdraw() + 
+  draw_label(
+    "Overall Effect of Father's Education on Child's Outcomes",
+    fontface = 'bold',
+    x = 0,
+    hjust = 0
+  ) +
+  theme(plot.margin = margin(0, 0, 0, 7))
+    
+    # add margin on the left of the drawing canvas,
+    # so title is aligned with left edge of first plot
+    
+  
+
+fig2 <- plot_grid(title, plot_fig2, ncol = 1,
+  
+  # rel_heights values control vertical title margins
+  
+  rel_heights = c(0.1, 1), 
+  caption.text = "This model contains missing data from single-mother households where no father info is available.")
+
+
+ggdraw(add_sub(fig2, "This model contains missing data from single-mother households where no father info is available.", size = 10))
+```
+
+
+
+
 ### Mother's Education & Child's Income
 
 This regression explores the relationship between a mother's education and child's income in 2016. Note that this model is controlling for college completion by age 25, family income in 1979, and sex.
 
 ```{r simple regression table, results = "asis"}
 
-m1 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_age25 + faminc_1979 + sex_1979, 
+m1 <- lm(logfaminc16 ~ hgc_mother_1979 + faminc_1979 + sex_1979, 
+         
+         # I did not include highest grade by age 25 (of child) as an
+         # explanatory variable bc it could be a collider, having a relationship
+         # with both highest grade of mother in 1979 and also the income of the
+         # child in 2016
+         
              data = dataset1, 
              weights = sampweight_1979)
 
 stargazer(m1, type = "html", digits = 3,
               title = "Mother's Education & her Children's Family Income in 2016",
               omit.summary.stat = c("n", "Min", "Max"),
-              covariate.labels=c("Mother's Educ", "Educ by Age 25", "Fam. Income 1979", "Sex: Female"),
+              covariate.labels=c("Mother's Educ", "Fam. Income 1979", "Sex: Female"),
               dep.var.labels = "Family Income in 2016")
 ```
 
@@ -105,7 +277,7 @@ stargazer(m1, type = "html", digits = 3,
 
 
 
-m2 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_father_1979 + hgc_age25 + faminc_1979 + sex_1979, 
+m2 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_father_1979 + faminc_1979 + sex_1979, 
              data = dataset1, 
              weights = sampweight_1979)
 
