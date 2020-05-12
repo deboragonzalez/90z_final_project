@@ -60,7 +60,9 @@ To explore these questions I build models that explore the association between a
 
 # Data & Methods {-}
 
-This project uses the National Longitudinal Survey (1979 cohort) to explore the role of mothers in the social and economic mobility of their children. I construct several OLS regression models to estimate the association between explanatory variables and expected outcomes, in this case, the education or income of the child. The research focuses on 'mother's education' as the key explanatory variable. In most cases, a woman's educational attainment, unlike occupation or earnings, is "temporally" prior to her marriage (or motherhood) and thus not directly affected by her husband/partner's socioeconomic status. This means that we are able to treat other indicators of a child's SES (e.g., parental occupation/income) as potential mediators that transmit the effect of mother's education. So, when we control for these other indicators of parental SES such as family income, the regression coeffcient of mother's education could be interpreted as a direct effect net of of these other pathways (Zhou, 2020). 
+This project uses the National Longitudinal Survey (1979 cohort) to explore the role of mothers in the social and economic mobility of their children. From the large original dataset I took a sample that allowed me to better explore the questions of interest. The dataset was sliced so the sample would only include children who were ages 14 to 18 in 1979. This was done in part due to the nature of the data, which did not include year-by-year detail on children younger than 14 and because we wanted to explore a mother's effect while the child was still a minor. Education was measured in years of education completed. For the mother's and father's education variable, we use the highest number of years completed by 1979. For the child's education, a new variable is constructed that calculates the number of years of school completed by the time the child is 25 years old. A new variable was created to account for whether or not the father's educational information was missing. This binary variable is introduced in the last few models exploring the mediated effect of the mother's education. The income variable is transformed using a log to to account for the right skew the raw numbers cause. For the graphic, however, an exponent is applied to facilitate the visual understanding of the relationship. The variable for child's sex is also recoded so that 1 refers to female in the binary.   
+
+I construct several OLS regression models to estimate the association between explanatory variables and expected outcomes, in this case, the education or income of the child. The research focuses on 'mother's education' as the key explanatory variable. In most cases, a woman's educational attainment, unlike occupation or earnings, is "temporally" prior to her marriage (or motherhood) and thus not directly affected by her husband/partner's socioeconomic status. This means that we are able to treat other indicators of a child's SES (e.g., parental occupation/income) as potential mediators that transmit the effect of mother's education. So, when we control for these other indicators of parental SES such as family income, the regression coeffcient of mother's education could be interpreted as a direct effect net of of these other pathways (Zhou, 2020). 
 
 
 Similarly, the educational attainment, occupation, cognitive ability of the child could also be seen as mediators, i.e., intervening variables between mother's education and child income. In our dataset, we account for child’s highest grade completed by age 25, which affects child’s income and is affected by mother’s education. I also include sex and the child's family income in 1979 as control explanatory variable since previous research indicates a strong relationship between these variables and a child's economic and educational outcome. Finally, I also evaluate father's education as a potential mediator pathway. Father's education is associated with mother's education via assortative mating and, as intergenerational mobility research indicates, is also likely to affect child outcomes. 
@@ -81,6 +83,7 @@ dataset1 <- nlsy79 %>%
 #  tnfi_trunc_2016, sampweight_1979, hgcrev90_1990, hgcrev90_1989,
 #  hgcrev90_1988, hgcrev90_1987, hgcrev90_1986) %>%
   
+  filter(between(age_1979, 14, 18)) %>% 
   mutate(hgc_age25 = case_when(age_1979 == 14 ~ hgc_1990,
                                age_1979 == 15 ~ hgc_1989,
                                age_1979 == 16 ~ hgc_1988,
@@ -130,7 +133,7 @@ m0.52 <- lm(hgc_age25 ~ hgc_father_1979,
            weights = sampweight_1979)
 
 
-stargazer(m0, m0.5, digits = 3,
+stargazer(m0.2, m0.52, digits = 3,
               title = "Father's Education Impact on his Children",
               omit.summary.stat = c("n", "Min", "Max"),
               covariate.labels=c("Father's Edu"),
@@ -155,7 +158,7 @@ fig1a <- augment(m0) %>%
               alpha = 0.3) +
   labs(title = "",
        subtitle = "",
-       x = "Highest Grade Completed by Mother in 1979",
+       x = "Mother's Edu in 1979",
        y = "Predicted Child's Family Income in '16") +
   theme_classic()
 
@@ -170,8 +173,8 @@ fig1b <- augment(m0.5) %>%
               alpha = 0.3) +
   labs(title = "",
        subtitle = "",
-       x = "Highest Grade Completed by Mother in 1979",
-       y = "Highest Grade Completed by Child by Age 25") +
+       x = "Mother's Edu in 1979",
+       y = "Predicted Child's Edu by Age 25") +
   theme_classic()
 
 
@@ -180,11 +183,10 @@ plot_fig <- plot_grid(fig1a, fig1b, labels = "AUTO")
 # now add the title
 title <- ggdraw() + 
   draw_label(
-    "Overall Effect of Mother's Education on Child's Outcomes",
+    "Figure 1: Overall Effect of Mother's Education on Child's Outcomes",
     fontface = 'bold',
     x = 0,
-    hjust = 0
-  ) +
+    hjust = 0) +
   theme(plot.margin = margin(0, 0, 0, 7))
     
     # add margin on the left of the drawing canvas,
@@ -298,10 +300,10 @@ augment(m2.5) %>%
   geom_ribbon(aes(ymin = .fitted - 1.96 * .se.fit,
                   ymax = .fitted + 1.96 * .se.fit),
               alpha = 0.3) +
-  labs(title = "Direct Effect of Mother's Education",
+  labs(title = "Figure 2: Direct Effect of Mother's Education",
        subtitle = "Mediated by Sex, Family Income, and Father's Education",
-       x = "Highest Grade Completed by Mother in 1979",
-       y = "Predicted Child's Highest Grade by Age 25") +
+       x = "Mother's Edu in 1979",
+       y = "Predicted Child's Edu by Age 25") +
   theme_classic()
 
 ```
@@ -371,7 +373,7 @@ Women play an important role in their children's potential for economic and educ
 
 # plot m0.2 using absolute dollars on the y axis
 
-fig2a <- augment(m0.2) %>%
+fig3a <- augment(m0.2) %>%
   ggplot(aes(x = hgc_father_1979, y = exp(.fitted)))+
   geom_line() +
   xlim(0, 20) +
@@ -380,13 +382,13 @@ fig2a <- augment(m0.2) %>%
               alpha = 0.3) +
   labs(title = "",
        subtitle = "",
-       x = "Highest Grade Completed by Father in 1979",
+       x = "Father's Edu in 1979",
        y = "Predicted Child's Family Income in '16") +
   theme_classic()
 
 # plot m0.52 using child's year of schooling on the y axis
 
-fig2b <- augment(m0.52) %>%
+fig3b <- augment(m0.52) %>%
   ggplot(aes(x = hgc_father_1979, y = .fitted))+
   geom_line() +
   xlim(0, 20) +
@@ -395,18 +397,18 @@ fig2b <- augment(m0.52) %>%
               alpha = 0.3) +
   labs(title = "",
        subtitle = "",
-       x = "Highest Grade Completed by Father in 1979",
-       y = "Highest Grade Completed by Child by Age 25") +
+       x = "Father's Edu in 1979",
+       y = "Predicted Child's Edu by Age 25") +
   theme_classic()
 
 
 
-plot_fig2 <- plot_grid(fig2a, fig2b, labels = "AUTO")
+plot_fig3 <- plot_grid(fig3a, fig3b, labels = "AUTO")
 
 # now add the title
 title <- ggdraw() + 
   draw_label(
-    "Overall Effect of Father's Education on Child's Outcomes",
+    "Figure 3: Overall Effect of Father's Education on Child's Outcomes",
     fontface = 'bold',
     x = 0,
     hjust = 0
@@ -418,7 +420,7 @@ title <- ggdraw() +
     
   
 
-fig2 <- plot_grid(title, plot_fig2, ncol = 1,
+fig3 <- plot_grid(title, plot_fig3, ncol = 1,
   
   # rel_heights values control vertical title margins
   
@@ -426,10 +428,10 @@ fig2 <- plot_grid(title, plot_fig2, ncol = 1,
   caption.text = "This model contains missing data from single-mother households where no father info is available.")
 
 
-ggdraw(add_sub(fig2, "This model contains missing data from single-mother households where no father info is available.", size = 10))
+ggdraw(add_sub(fig3, "This model contains missing data from single-mother households where no father info is available.", size = 10))
 ```
 
-Figure 2 visualizes the relationship between the two outcomes of interest and father's education. It can be compared to Figure 1, which shows the mother's effect.
+Figure 3 visualizes the relationship between the two outcomes of interest and father's education. It can be compared to Figure 1, which shows the mother's effect.
 
 \newpage
 # References {-}
