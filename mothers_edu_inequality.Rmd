@@ -17,6 +17,8 @@ library(broom)
 library(cowplot)
 library(ggplot2)
 
+
+
 ```
 
 \newpage
@@ -47,16 +49,17 @@ Inspired by Beller (2009), I would like to take a look at the ways in which educ
 (c) For whom does mother's education matter most? Sons? Daughters? Children raised in single-mother households? Or only daughters raised in single-mother households?
 
 
-To explore these questions I am building models that explore the association between a mother's education and her children's outcome and introducing explanatory variable controls such as father's education, college completion, parental family income, parental family income quantile, child's sex, etc. Ideally, I will be able to observe how the mother's education affect her child's educational and financial outcome as a whole and also when controlling for some of these other factors. I may put special emphasis in the relationship mothers have to daughters outcomes versus that of sons in different family structures, and theorize the reasons behind any patterns I may find. Ultimately, the purpose of this project is to explore the ways in which women influence social mobility for future generations.
+To explore these questions I build models that explore the association between a mother's education and her children's outcome and introducing explanatory variable controls such as father's education, college completion, parental family income, parental family income quantile, child's sex, etc. I observe how the mother's education affect her child's educational and financial outcome as a whole and also when controlling for some of these other factors. I put special emphasis in the relationship mothers have to daughters outcomes versus that of sons in different family structures, and theorize the reasons behind any patterns I may find. Ultimately, this project explores the ways in which women influence social mobility for future generations.
 
 \newpage
 
 # Data & Methods
 
-This project will use the National Longitudinal Survey (1979 cohort) to explore the role of mothers in the social and economic mobility of their children. I will be conducting OLS regressions to estimate the association between explanatory variables and expected outcomes, in this case, the education or income of the child. The research focuses on 'mother's education' as the key explanatory variable. In most cases, a woman's educational attainment, unlike occupation or earnings, is "temporally" prior to her marriage (or motherhood) and thus not directly affected by her husband/partner's socioeconomic status. This means that we are able to treat other indicators of a child's SES (e.g., parental occupation/income) as potential mediators that transmit the effect of mother's education. So, when we control for these other indicators of parental SES such as family income, the regression coeffcient of mother's education could be interpreted as a direct effect net of of these other pathways (Zhou, 2020). 
+This project uses the National Longitudinal Survey (1979 cohort) to explore the role of mothers in the social and economic mobility of their children. I construct several OLS regression models to estimate the association between explanatory variables and expected outcomes, in this case, the education or income of the child. The research focuses on 'mother's education' as the key explanatory variable. In most cases, a woman's educational attainment, unlike occupation or earnings, is "temporally" prior to her marriage (or motherhood) and thus not directly affected by her husband/partner's socioeconomic status. This means that we are able to treat other indicators of a child's SES (e.g., parental occupation/income) as potential mediators that transmit the effect of mother's education. So, when we control for these other indicators of parental SES such as family income, the regression coeffcient of mother's education could be interpreted as a direct effect net of of these other pathways (Zhou, 2020). 
 
 
-Similarly, the educational attainment, occupation, cognitive ability of the child could also be seen as mediators, i.e., intervening variables between mother's education and child income.
+Similarly, the educational attainment, occupation, cognitive ability of the child could also be seen as mediators, i.e., intervening variables between mother's education and child income. In our dataset, we account for child’s highest grade completed by age 25, which affects child’s income and is affected by mother’s education. I also include sex and the child's family income in 1979 as control explanatory variable since previous research indicates a strong relationship between these variables and a child's economic and educational outcome. Finally, I also evaluate father's education as a potential mediator pathway. Father's education is associated with mother's education via assortative mating and, as intergenerational mobility research indicates, is also likely to affect child outcomes. 
+
 
 
 
@@ -119,6 +122,11 @@ m0.52 <- lm(hgc_age25 ~ hgc_father_1979,
            weights = sampweight_1979)
 
 
+stargazer(m0, m0.5, type = "text", digits = 3,
+              title = "Father's Education Impact on her Children",
+              omit.summary.stat = c("n", "Min", "Max"),
+              covariate.labels=c("Father's Educ"),
+              dep.var.labels = c("Family Income in 2016", "Child's Education by Age 25"))
 
 
 ```
@@ -248,92 +256,97 @@ ggdraw(add_sub(fig2, "This model contains missing data from single-mother househ
 
 
 
-### Mother's Education & Child's Income
+### Mother's Education & Child's Income Mediators
 
-This regression explores the relationship between a mother's education and child's income in 2016. Note that this model is controlling for college completion by age 25, family income in 1979, and sex.
+This regression explores the relationship between a mother's education and child's income in 2016 controlling for family income in 1979, child's sex, and highest grade completed by age 25. 
 
-```{r simple regression table, results = "asis"}
+```{r dataset2_setup}
 
-m1 <- lm(logfaminc16 ~ hgc_mother_1979 + faminc_1979 + sex_1979, 
+mean_dataset2 <- dataset1 %>% 
+  drop_na(hgc_father_1979) %>% 
+  summarise(mean_dad = mean(hgc_father_1979))
+  
+dataset2 <- dataset1 %>% 
+  mutate(dadedu_na = if_else(is.na(hgc_father_1979), 1, 0),
+         hgc_father_1979 = replace_na(hgc_father_1979, 10.7),
+         father_absent_1979 = case_when(father_absent_1979 == -4 ~ 1))
+  
+
+# The -4 for the father absent variable seems to refer to the respondent's
+# father was no longer living in 1979, but the variable is meant to be a binary
+# for the qst Father live apart? No =0, Yes = 1. So, I'm recoding -4 as 1, which
+# means father is absent.
+
+
+# A procedure that would allow us to use father's education without dropping
+# cases. Suppose the father education variable is "dadedu", one can (a) create a
+# new binary variable, say "dadedu_na", indicating whether father's education is
+# missing (1 = missing, 0 = not missing); (b) for respondents whose "dadedu" is
+# missing, recode it using an arbitrary value (e.g., its sample mean); and (c)
+# add both "dadedu" and "dadedu_na" to your model. In this model, since neither
+# "dadedu" or "dadedu_na" contains missing values, you won't have cases dropped,
+# and the coefficient on "dadedu" variable can still be interpreted in its usual
+# way.
+
+```
+
+
+```{r mediators, results = "asis"}
+
+m1 <- lm(logfaminc16 ~ hgc_mother_1979 + faminc_1979 + sex_1979 + hgc_age25, 
          
-         # I did not include highest grade by age 25 (of child) as an
-         # explanatory variable bc it could be a collider, having a relationship
-         # with both highest grade of mother in 1979 and also the income of the
-         # child in 2016
-         
-             data = dataset1, 
+             data = dataset2, 
              weights = sampweight_1979)
 
-stargazer(m1, type = "html", digits = 3,
-              title = "Mother's Education & her Children's Family Income in 2016",
+m2 <- lm(logfaminc16 ~ hgc_mother_1979 + faminc_1979 + sex_1979 + hgc_age25 + hgc_father_1979 + dadedu_na, 
+         
+             data = dataset2, 
+             weights = sampweight_1979)
+
+stargazer(m1, m2, type = "html", digits = 3,
+              title = "Mother's Education & her Children's Family Income in 2016: Mediated Effect",
               omit.summary.stat = c("n", "Min", "Max"),
-              covariate.labels=c("Mother's Educ", "Fam. Income 1979", "Sex: Female"),
+              covariate.labels=c("Mother's Educ", "Fam. Income 1979", "Sex: Female", "Child's Highest Edu by Age 25", "Father's Edu"),
               dep.var.labels = "Family Income in 2016")
 ```
 
-### Mother's vs. Father's Education Effect on Child's Income (a)
-
-```{r parent_comp, results = "asis"}
 
 
-
-m2 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_father_1979 + faminc_1979 + sex_1979, 
-             data = dataset1, 
-             weights = sampweight_1979)
-
-
-stargazer(m2, type = "html", digits = 3,
-              title = "Mother's vs. Father's Education Effect on their Children's Family Income in 2016",
-              omit.summary.stat = c("n", "Min", "Max"),
-              covariate.labels=c("Mother's Edu", "Father's Edu", "Edu by Age 25", "Fam. Income 1979", "Sex: Female"),
-              dep.var.labels = "Family Income in 2016")
-```
-
-###  Mother's vs. Father's Education Effect on Child's Education (b)
-
-```{r parent_comp_edu, results = "asis"}
-
-
-m3 <- lm(hgc_age25 ~ hgc_mother_1979 + hgc_father_1979 + faminc_1979 + sex_1979, 
-             data = dataset1, 
-             weights = sampweight_1979)
-
-stargazer(m3, type = "html", digits = 3,
-              title = "Mother's vs. Father's Education Effect on their Children's Education by Age 25",
-              omit.summary.stat = c("n", "Min", "Max"),
-              covariate.labels=c("Mother's Edu", "Father's Edu", "Fam. Income 1979", "Sex: Female"),
-              dep.var.labels = "Education by Age 25")
-
-```
 ### Heterogeneity: For Whom Does Mother's Education Matter Most?
 
 ```{r hetero, results="asis"}
   
-  
-dataset2 <- dataset1 %>% 
-  filter(father_absent_1979 != -4)
-  
 
-# I'm not sure what -4 refers to, but the variable is meant to be a binary for
-# the qst Father live apart? No =0, Yes = 1.
+m3 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_age25 + faminc_1979 + hgc_mother_1979*sex_1979, 
+             data = dataset2, 
+             weights = sampweight_1979)
 
-m4 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_father_1979 +  hgc_age25 + faminc_1979 + hgc_mother_1979*sex_1979, 
-             data = dataset1, 
+# Accounting for father's edu effect:
+
+m4 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_father_1979 + dadedu_na + hgc_age25 + faminc_1979 + hgc_mother_1979*sex_1979, 
+             data = dataset2, 
              weights = sampweight_1979)
 
 
 # for sex_1979 Male = 1, Female = 2
 
-m5 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_father_1979 +  hgc_age25 + faminc_1979 + hgc_mother_1979*father_absent_1979, 
+# Now, what kind of household do mom's have the highest effect in:
+
+m5 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_age25 + faminc_1979 + hgc_mother_1979*father_absent_1979, 
+             data = dataset2, 
+             weights = sampweight_1979)
+
+m6 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_father_1979 + dadedu_na + hgc_age25 + faminc_1979 + hgc_mother_1979*father_absent_1979, 
              data = dataset2, 
              weights = sampweight_1979)
 
 
-stargazer(m4,m5, type = "html", digits = 3,
-              title = "Mother's Education Heterogeneous Effect on their Children's Family Income in 2016",
+stargazer(m3, m4, m5, m6, type = "html", digits = 3,
+              title = "Mother's Education Heterogeneous Effect on their Children's Family Income in 2016: Mediated Pathways",
               omit.summary.stat = c("n", "Min", "Max"),
-              covariate.labels=c("Mother's Edu", "Father's Edu", "Edu by Age 25", "Fam. Income 1979", "Sex: Female", "Interaction: Mother's Edu & SexFemale", "Absent Father Household", "Interaction: Mother's Edu & Absent Father Household"),
+              covariate.labels=c("Mother's Edu", "Father's Edu", "Father Edu Missing", "Child's Highest Edu by Age 25", "Fam. Income 1979", "Sex: Female", "Interaction: Mother's Edu & Female", "Single Mom Household", "Interaction: Mother's Edu & Single Mom Household"),
               dep.var.labels = "Family Income in 2016")
+
 
 
 # stargazer(m4, m5, type = "text")
