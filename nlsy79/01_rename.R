@@ -6,6 +6,9 @@ nlsy79full <- read_dta("/Users/debis/Documents/90Z/90z_final_project/NLSY79/nlsy
   rename_all(str_to_lower) %>%
   mutate_all(unclass)
 
+# Note tha depending on how directory is set up the content inside the read_dta
+# command may change.
+
 nlsy79full_varlabels <- map(nlsy79full, ~ attr(.x, "label")) %>%
   enframe()
 

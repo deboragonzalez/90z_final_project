@@ -1,0 +1,23 @@
+---
+title: "Invest in Women"
+subtitle: 'How A Mother''s Education Affect Her Children''s Future'
+author: "Debora Gonzalez"
+date: "5/4/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+
+library(tidyverse)
+library(rstanarm)
+library(Hmisc)
+library(stargazer)
+
+```
+
+
+
+
+

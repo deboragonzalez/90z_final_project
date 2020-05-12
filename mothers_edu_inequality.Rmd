@@ -3,7 +3,12 @@ title: 'Invest in Women'
 subtitle: 'How A Mother''s Education Affect Her Children''s Future'
 author: "Debora Gonzalez"
 date: "4/24/2020"
-output: html_document
+header-includes:
+    - \usepackage{setspace}\doublespacing
+    - \usepackage{float}
+output:
+  bookdown::pdf_document2: default
+toc: false
 ---
 
 ```{r setup, include=FALSE}
@@ -22,7 +27,7 @@ library(ggplot2)
 ```
 
 \newpage
-# Background Overview
+# Background Overview {-}
 
 ### Understanding the associations between a mother's education and her children's social and economic mobility
 
@@ -39,7 +44,7 @@ According to Time Magazine, women are the majority of the U.S. laborforce with t
 These amazing statistics highlight an interesting question about the effect of a mother's education on her child's educational and financial outcomes. If women are such a relevant part of the workforce, how do they affect their children's mobility? How is their education level relevant to that of their children? How does a woman's social class affect her son's or daughter's outcomes differently? Because women in the U.S. are no longer (purely) defined by a husband's social or class status, it may be interesting to explore how their level of education and social class affect their children's outcomes. Beller (2009) in the article "Bringing Intergenerational Social Mobility Research into the Twenty-first Century: Why Mothers Matter," challenges the standard of inequality and social mobility research, wherein mothers' background or economic participation is neither common nor important. Beller argues that "models that incorporate both mothers' and fathers' characteristics into class origin measures" provide a better fit than conventional models for both men and women.
 
 \newpage
-# Research Question
+# Research Question {-}
 
 
 Inspired by Beller (2009), I would like to take a look at the ways in which educational attainment and/or social class of mothers affect(s) their children's outcomes. I hope to construct a few models to explore these main questions:
@@ -53,7 +58,7 @@ To explore these questions I build models that explore the association between a
 
 \newpage
 
-# Data & Methods
+# Data & Methods {-}
 
 This project uses the National Longitudinal Survey (1979 cohort) to explore the role of mothers in the social and economic mobility of their children. I construct several OLS regression models to estimate the association between explanatory variables and expected outcomes, in this case, the education or income of the child. The research focuses on 'mother's education' as the key explanatory variable. In most cases, a woman's educational attainment, unlike occupation or earnings, is "temporally" prior to her marriage (or motherhood) and thus not directly affected by her husband/partner's socioeconomic status. This means that we are able to treat other indicators of a child's SES (e.g., parental occupation/income) as potential mediators that transmit the effect of mother's education. So, when we control for these other indicators of parental SES such as family income, the regression coeffcient of mother's education could be interpreted as a direct effect net of of these other pathways (Zhou, 2020). 
 
@@ -62,9 +67,8 @@ Similarly, the educational attainment, occupation, cognitive ability of the chil
 
 
 
-
 \newpage
-# Analysis
+# Analysis {-}
 
 ```{r data setup, include = FALSE}
 
@@ -83,6 +87,9 @@ dataset1 <- nlsy79 %>%
                                age_1979 == 17 ~ hgc_1987,
                                age_1979 == 18 ~ hgc_1986),
          female = if_else(sex_1979 == 2, 1, 0)) %>% 
+  
+  # sex = 2 = female, 1 = male ==> so I recoded as 0,1 binary M,F.
+  
   filter(faminc_2016 > 0) %>% 
   mutate(logfaminc16 = log(faminc_2016))
 
@@ -91,7 +98,7 @@ dataset1 <- nlsy79 %>%
 ### Mother's Overall Effect
 
 
-```{r overall}
+```{r overall, results = "asis"}
 m0 <- lm(logfaminc16 ~ hgc_mother_1979, 
          data = dataset1, 
          weights = sampweight_1979)
@@ -102,15 +109,16 @@ m0.5 <- lm(hgc_age25 ~ hgc_mother_1979,
            weights = sampweight_1979)
 
 
-stargazer(m0, m0.5, type = "text", digits = 3,
+stargazer(m0, m0.5, digits = 3,
               title = "Mother's Education Impact on her Children",
               omit.summary.stat = c("n", "Min", "Max"),
-              covariate.labels=c("Mother's Educ"),
-              dep.var.labels = c("Family Income in 2016", "Child's Education by Age 25"))
+              covariate.labels=c("Mother's Edu"),
+              dep.var.labels = c("Family Income in 2016", "Child's Education by Age 25"),
+          header = F)
 ```
+As Table 1 shows, the overall effect of mother's education on her child's outcome is strong and statistically significant. Mother's education shapes her children's own education prospects. Perhaps it all starts at a young age when educated mothers get to teach their children some of the skills that make them successful in primary and secondary education. As these children enter educational institution, they have some inherent advantages: 1) the benefit of an early education through exposure to mother's vocabulary and critical thinking, and 2) continuous support from their mother in their educational journey. As a result, children of educated mothers can expect on average better educational outcomes and better financial outcomes. There is a strong correlation that a quality education leads to higher economic output. This relationship is also fairly large and significant between mother's education and child's income. 
 
-
-```{r dad_effect}
+```{r dad_effect, results= "asis"}
 
 m0.2 <- lm(logfaminc16 ~ hgc_father_1979, 
          data = dataset1, 
@@ -122,17 +130,19 @@ m0.52 <- lm(hgc_age25 ~ hgc_father_1979,
            weights = sampweight_1979)
 
 
-stargazer(m0, m0.5, type = "text", digits = 3,
-              title = "Father's Education Impact on her Children",
+stargazer(m0, m0.5, digits = 3,
+              title = "Father's Education Impact on his Children",
               omit.summary.stat = c("n", "Min", "Max"),
-              covariate.labels=c("Father's Educ"),
-              dep.var.labels = c("Family Income in 2016", "Child's Education by Age 25"))
+              covariate.labels=c("Father's Edu"),
+              dep.var.labels = c("Family Income in 2016", "Child's Education by Age 25"),
+          header = F)
 
 
 ```
 
+For the sake of comparison, we explore the numerical relationship between fathers' education and children's output as well. The relationship is quite similar to that of the mothers further proving the idea that both should be studied further to better understand questions of mobility. 
 
-```{r overall_graphic}
+```{r overall_graphic, warning = FALSE}
 
 # plot m0 using absolute dollars on the y axis
 
@@ -190,7 +200,173 @@ plot_grid(title, plot_fig, ncol = 1,
 ```
 
 
-```{r father_graphic}
+
+
+### Mother's Education & Child's Income Mediators
+
+Certainly, a mother's education has an effect on her child's economic and educational outcomes, but our previous model does not portray a direct relationship or effect. To better understand the direct effect of mother's education, we have to examine potential mediators and include them in our model. The first OLS model in Table 3 explores the relationship between a mother's education and child's income in 2016 controlling for family income in 1979, child's sex, and highest grade completed by age 25. The second model also includes the mediator of father's education. Notably, in order to use the father's education variable, I created a new binary variable which accounts for whether (1) or not (0) the data for the father is missing. In addition, I substitute all the missing values in the father's education variable with the average years of education (~10.7). This allows me to isolate the direct mother's effect while accounting for other mediators that are also related to the child's outcome. 
+
+
+```{r dataset2_setup}
+
+mean_dataset2 <- dataset1 %>% 
+  drop_na(hgc_father_1979) %>% 
+  summarise(mean_dad = mean(hgc_father_1979))
+  
+dataset2 <- dataset1 %>% 
+  mutate(dadedu_na = if_else(is.na(hgc_father_1979), 1, 0),
+         hgc_father_1979 = replace_na(hgc_father_1979, 10.7),
+         father_absent_1979 = case_when(father_absent_1979 == -4 ~ 1,
+                                        father_absent_1979 == 1 ~ 1,
+                                        father_absent_1979 == 0 ~ 0))
+  
+
+# The -4 for the father absent variable seems to refer to the respondent's
+# father was no longer living in 1979, but the variable is meant to be a binary
+# for the qst Father live apart? No =0, Yes = 1. So, I'm recoding -4 as 1, which
+# means father is absent.
+
+
+# A procedure that would allow us to use father's education without dropping
+# cases. Suppose the father education variable is "dadedu", one can (a) create a
+# new binary variable, say "dadedu_na", indicating whether father's education is
+# missing (1 = missing, 0 = not missing); (b) for respondents whose "dadedu" is
+# missing, recode it using an arbitrary value (e.g., its sample mean); and (c)
+# add both "dadedu" and "dadedu_na" to your model. In this model, since neither
+# "dadedu" or "dadedu_na" contains missing values, you won't have cases dropped,
+# and the coefficient on "dadedu" variable can still be interpreted in its usual
+# way.
+
+```
+
+
+```{r mediators, results = "asis"}
+
+m1 <- lm(logfaminc16 ~ hgc_mother_1979 + faminc_1979 + sex_1979 + hgc_age25, 
+         
+             data = dataset2, 
+             weights = sampweight_1979)
+
+m2 <- lm(logfaminc16 ~ hgc_mother_1979 + faminc_1979 + sex_1979 + hgc_age25 + hgc_father_1979 + dadedu_na, 
+         
+             data = dataset2, 
+             weights = sampweight_1979)
+
+m1.5 <- lm(hgc_age25 ~ hgc_mother_1979 + faminc_1979 + sex_1979, 
+         
+             data = dataset2, 
+             weights = sampweight_1979)
+
+m2.5 <- lm(hgc_age25 ~ hgc_mother_1979 + faminc_1979 + sex_1979 + hgc_father_1979 + dadedu_na, 
+         
+             data = dataset2, 
+             weights = sampweight_1979)
+
+stargazer(m1, m2, m1.5, m2.5, digits = 3, 
+          title = "Mother's Education and her Children's Family Income in 2016: Mediated Effect",
+          omit.summary.stat = c("n", "Min", "Max"),
+          omit.stat = c("f", "ser"),
+          covariate.labels=c("Mother's Edu", "Fam. Income 1979", "Sex: Female", "Child's Highest Edu by Age 25", "Father's Edu", "Father Edu Missing"),
+          dep.var.labels = c("Family Income in 2016", "Highest Grade by Age 25"),
+          header = F,
+          table.placement = "h",
+          
+          column.sep.width = "0pt")
+
+
+# stargazer(m1.5, m2.5, type = "text", digits = 3, 
+#          title = "Mother's Education and her Children's Family Income in 2016: Mediated Effect",
+#          omit.summary.stat = c("n", "Min", "Max"),
+#          covariate.labels=c("Mother's Educ", "Fam. Income 1979", "Sex: Female", "Father's Edu", "Father Edu Missing"),
+#          dep.var.labels = c("Family Income in 2016"),
+#          header = F,
+#          table.placement = "h")
+```
+
+Interestingly, adding the controls nearly nullifies the mother's effect on her child's financial outcome, which becomes largely statistically insignificant. The most obvious relationship is now of that between the child's education by age 25 and his or her financial outcome, which is not only strongly positive, but also statistically significant with a p value of less than 0.01. When adding the father's education variable, we still see some significant effect, but it is very small in magnitude. Now, if the father's education is missing, then we see a substantial negative effect on the child's outcome, which is statiscally significant with a p value of less than 0.05. 
+
+Despite the lack of statistical significance in the effect of mother's education on financial outcome, models 3 and 4 show a very large and statistically significant association between mother's education and child's education outcome. This effect is not only large in magnitude, but also has a p value of less than 0.01. In model 4, when father's education is added as a control, the magnitude of the mother's effect decreases, but it is still quite large and equally statistically significant. Notably, in model 4 like in model 2, a father's absence leads to a large negative impact on the child's outcome. 
+
+```{r direct_effect, warning = FALSE}
+
+# plot m2.5 using child's year of schooling on the y axis
+
+augment(m2.5) %>%
+  ggplot(aes(x = hgc_mother_1979, y = .fitted))+
+  geom_line() +
+  xlim(0, 20) +
+  geom_ribbon(aes(ymin = .fitted - 1.96 * .se.fit,
+                  ymax = .fitted + 1.96 * .se.fit),
+              alpha = 0.3) +
+  labs(title = "Direct Effect of Mother's Education",
+       subtitle = "Mediated by Sex, Family Income, and Father's Education",
+       x = "Highest Grade Completed by Mother in 1979",
+       y = "Predicted Child's Highest Grade by Age 25") +
+  theme_classic()
+
+```
+
+### Heterogeneity: For Whom Does Mother's Education Matter Most?
+
+Now that we have established that a mother's education strongest and most significant effect is related to her children's educational outcome, we explore how this effect vary by gender and type of household. Does a mother's education affect more her daughter's or her son's educational outcome? Does it affect them more if she is a single mother? 
+
+```{r hetero, results = "asis"}
+  
+
+m3 <- lm(hgc_age25 ~ hgc_mother_1979 + faminc_1979 + hgc_mother_1979*sex_1979 + father_absent_1979, 
+             data = dataset2, 
+             weights = sampweight_1979)
+
+# Accounting for father's edu effect:
+
+m4 <- lm(hgc_age25 ~ hgc_mother_1979 + hgc_father_1979 + dadedu_na + faminc_1979 + father_absent_1979 + hgc_mother_1979*sex_1979, 
+             data = dataset2, 
+             weights = sampweight_1979)
+
+
+# for sex_1979 Male = 1, Female = 2
+
+# Now, what kind of household do mom's have the highest effect in:
+
+m5 <- lm(hgc_age25 ~ hgc_mother_1979 + faminc_1979 + sex_1979 + hgc_mother_1979*father_absent_1979, 
+             data = dataset2, 
+             weights = sampweight_1979)
+
+m6 <- lm(hgc_age25 ~ hgc_mother_1979 + hgc_father_1979 + sex_1979 + dadedu_na + faminc_1979 + hgc_mother_1979*father_absent_1979, 
+             data = dataset2, 
+             weights = sampweight_1979)
+
+
+stargazer(m3, m4, m5, m6, digits = 3,
+          title = "Mother's Education Heterogeneous Effect on her Children's Educational Outcome: Mediated Pathways",
+          omit.summary.stat = c("n", "Min", "Max"),
+          omit.stat = c("f", "ser"),
+          covariate.labels=c("Mother's Edu",  "Father's Edu", "Father Edu Missing", "Fam. Income 1979", "Sex: Female", "Single Mom Household", "Interaction: Mother's Edu-Female", "Interaction: Mother's Edu-Single Mom Household"),
+          dep.var.labels = "Child's Highest Edu by Age 25",
+          column.sep.width = "0pt",
+          header = F)
+
+
+# stargazer(m4, m5, type = "text")
+
+
+```
+
+Table 4 shows that a single mother's education effect on her children is indeed larger and more significant than that of a mother in a two-parent household. This is specially exemplified by model 2, where lacking paternal education information significantly diminished the outcome of the child with a p value of less than 0.05 and having a single mom household improved the outcome of the child with a p value of less than 0.01. This set of models also show that the effect of mother's education on daughters is positive, but diminished, compared to that of sons, when gender is interacted with mother's education. It also indicates that further research may be necessary to better grasp the relationnship between a mother's education and her children's outcome in the context of a single-parent home. However, it appears that mothers' education becomes remarkably more important when a father is absent. Despite the difficulties associated with having only a small subset of the dataset qualify as single-mom households, these results suggest future opportunity for research in the area. 
+
+
+# Conclusions {-}
+
+We now know that mother's education plays an equally important role as the father in the social and economic mobility of their child. The numbers are even more compelling for a child's education, but given the large association between a person's education and their financial outcome, it is certainly fair to say that women do indeed play a large role in their children's financial mobility as well. This trend seems to be amplified in single-mother households, but further research may be necessary to uncover the intricacies between these overlapping relatioships. 
+
+Women play an important role in their children's potential for economic and educational mobility. Perhaps most notable is their effect on their children's education outcome. Moms seem to have a special role in cultivating their children's intellectual curiosity and development to the point where their own educational success is reflected in that of their children. Researchers of child development may find these findings and those of parellel studies intriguing as they develop creative tools to maximize the ways in which mothers and fathers (regardless of their educational background) can positively impact their kids' outcomes. 
+ 
+
+
+# Appendix {-}
+
+
+```{r father_graphic, warning = FALSE}
 
 
 # plot m0.2 using absolute dollars on the y axis
@@ -253,117 +429,15 @@ fig2 <- plot_grid(title, plot_fig2, ncol = 1,
 ggdraw(add_sub(fig2, "This model contains missing data from single-mother households where no father info is available.", size = 10))
 ```
 
+Figure 2 visualizes the relationship between the two outcomes of interest and father's education. It can be compared to Figure 1, which shows the mother's effect.
 
+\newpage
+# References {-}
 
+Beller, E. Bringing Intergenerational Social Mobility Research into the Twenty-first Century: Why Mothers Matter. American Sociological Review, 74(4), 507–528. 2009 <https://doi.org/10.1177/000312240907400401>.
 
-### Mother's Education & Child's Income Mediators
+Bureau of Labor Statistics, U.S. Department of Labor, The Economics Daily, A look at women’s education and earnings since the 1970s on the Internet at <https://www.bls.gov/opub/ted/2017/a-look-at-womens-education-and-earnings-since-the-1970s.htm>.
 
-This regression explores the relationship between a mother's education and child's income in 2016 controlling for family income in 1979, child's sex, and highest grade completed by age 25. 
+Law, Tara. "Women Are Now the Majority of the U.S. Workforce — But Working Women Still Face Serious Challenges" <i>Time Magazine - Business & Economics </i> (Jan. 2020) <https://time.com/5766787/women-workforce/>.
 
-```{r dataset2_setup}
-
-mean_dataset2 <- dataset1 %>% 
-  drop_na(hgc_father_1979) %>% 
-  summarise(mean_dad = mean(hgc_father_1979))
-  
-dataset2 <- dataset1 %>% 
-  mutate(dadedu_na = if_else(is.na(hgc_father_1979), 1, 0),
-         hgc_father_1979 = replace_na(hgc_father_1979, 10.7),
-         father_absent_1979 = case_when(father_absent_1979 == -4 ~ 1))
-  
-
-# The -4 for the father absent variable seems to refer to the respondent's
-# father was no longer living in 1979, but the variable is meant to be a binary
-# for the qst Father live apart? No =0, Yes = 1. So, I'm recoding -4 as 1, which
-# means father is absent.
-
-
-# A procedure that would allow us to use father's education without dropping
-# cases. Suppose the father education variable is "dadedu", one can (a) create a
-# new binary variable, say "dadedu_na", indicating whether father's education is
-# missing (1 = missing, 0 = not missing); (b) for respondents whose "dadedu" is
-# missing, recode it using an arbitrary value (e.g., its sample mean); and (c)
-# add both "dadedu" and "dadedu_na" to your model. In this model, since neither
-# "dadedu" or "dadedu_na" contains missing values, you won't have cases dropped,
-# and the coefficient on "dadedu" variable can still be interpreted in its usual
-# way.
-
-```
-
-
-```{r mediators, results = "asis"}
-
-m1 <- lm(logfaminc16 ~ hgc_mother_1979 + faminc_1979 + sex_1979 + hgc_age25, 
-         
-             data = dataset2, 
-             weights = sampweight_1979)
-
-m2 <- lm(logfaminc16 ~ hgc_mother_1979 + faminc_1979 + sex_1979 + hgc_age25 + hgc_father_1979 + dadedu_na, 
-         
-             data = dataset2, 
-             weights = sampweight_1979)
-
-stargazer(m1, m2, type = "html", digits = 3,
-              title = "Mother's Education & her Children's Family Income in 2016: Mediated Effect",
-              omit.summary.stat = c("n", "Min", "Max"),
-              covariate.labels=c("Mother's Educ", "Fam. Income 1979", "Sex: Female", "Child's Highest Edu by Age 25", "Father's Edu"),
-              dep.var.labels = "Family Income in 2016")
-```
-
-
-
-### Heterogeneity: For Whom Does Mother's Education Matter Most?
-
-```{r hetero, results="asis"}
-  
-
-m3 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_age25 + faminc_1979 + hgc_mother_1979*sex_1979, 
-             data = dataset2, 
-             weights = sampweight_1979)
-
-# Accounting for father's edu effect:
-
-m4 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_father_1979 + dadedu_na + hgc_age25 + faminc_1979 + hgc_mother_1979*sex_1979, 
-             data = dataset2, 
-             weights = sampweight_1979)
-
-
-# for sex_1979 Male = 1, Female = 2
-
-# Now, what kind of household do mom's have the highest effect in:
-
-m5 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_age25 + faminc_1979 + hgc_mother_1979*father_absent_1979, 
-             data = dataset2, 
-             weights = sampweight_1979)
-
-m6 <- lm(logfaminc16 ~ hgc_mother_1979 + hgc_father_1979 + dadedu_na + hgc_age25 + faminc_1979 + hgc_mother_1979*father_absent_1979, 
-             data = dataset2, 
-             weights = sampweight_1979)
-
-
-stargazer(m3, m4, m5, m6, type = "html", digits = 3,
-              title = "Mother's Education Heterogeneous Effect on their Children's Family Income in 2016: Mediated Pathways",
-              omit.summary.stat = c("n", "Min", "Max"),
-              covariate.labels=c("Mother's Edu", "Father's Edu", "Father Edu Missing", "Child's Highest Edu by Age 25", "Fam. Income 1979", "Sex: Female", "Interaction: Mother's Edu & Female", "Single Mom Household", "Interaction: Mother's Edu & Single Mom Household"),
-              dep.var.labels = "Family Income in 2016")
-
-
-
-# stargazer(m4, m5, type = "text")
-
-
-```
-
-
-# Conclusions
-
-
-
-# References
-
-Beller, E. (2009). Bringing Intergenerational Social Mobility Research into the Twenty-first Century: Why Mothers Matter. American Sociological Review, 74(4), 507–528. https://doi.org/10.1177/000312240907400401.
-
-Bureau of Labor Statistics, U.S. Department of Labor, The Economics Daily, A look at women’s education and earnings since the 1970s on the Internet at https://www.bls.gov/opub/ted/2017/a-look-at-womens-education-and-earnings-since-the-1970s.htm.
-
-Law, Tara. "Women Are Now the Majority of the U.S. Workforce — But Working Women Still Face Serious Challenges" <i>Time Magazine - Business & Economics </i> (Jan. 2020) https://time.com/5766787/women-workforce/.
-
+Zhou, Xiang. "Research Lab: Inequality" SOC90Z, Harvard Univesity. Spring 2020.
