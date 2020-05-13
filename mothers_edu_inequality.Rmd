@@ -116,7 +116,7 @@ stargazer(m0, m0.5, digits = 3,
               title = "Mother's Education Impact on her Children",
               omit.summary.stat = c("n", "Min", "Max"),
               covariate.labels=c("Mother's Edu"),
-              dep.var.labels = c("Family Income in 2016", "Child's Education by Age 25"),
+              dep.var.labels = c("Log Family Income in 2016", "Child's Education by Age 25"),
           header = F)
 ```
 As Table 1 shows, the overall effect of mother's education on her child's outcome is strong and statistically significant. Mother's education shapes her children's own education prospects. Perhaps it all starts at a young age when educated mothers get to teach their children some of the skills that make them successful in primary and secondary education. As these children enter educational institution, they have some inherent advantages: 1) the benefit of an early education through exposure to mother's vocabulary and critical thinking, and 2) continuous support from their mother in their educational journey. As a result, children of educated mothers can expect on average better educational outcomes and better financial outcomes. There is a strong correlation that a quality education leads to higher economic output. This relationship is also fairly large and significant between mother's education and child's income. 
@@ -137,7 +137,7 @@ stargazer(m0.2, m0.52, digits = 3,
               title = "Father's Education Impact on his Children",
               omit.summary.stat = c("n", "Min", "Max"),
               covariate.labels=c("Father's Edu"),
-              dep.var.labels = c("Family Income in 2016", "Child's Education by Age 25"),
+              dep.var.labels = c("Log Family Income in 2016", "Child's Education by Age 25"),
           header = F)
 
 
@@ -269,7 +269,7 @@ stargazer(m1, m2, m1.5, m2.5, digits = 3,
           omit.summary.stat = c("n", "Min", "Max"),
           omit.stat = c("f", "ser"),
           covariate.labels=c("Mother's Edu", "Fam. Income 1979", "Sex: Female", "Child's Highest Edu by Age 25", "Father's Edu", "Father Edu Missing"),
-          dep.var.labels = c("Family Income in 2016", "Highest Grade by Age 25"),
+          dep.var.labels = c("Log Family Income in 2016", "Highest Grade by Age 25"),
           header = F,
           table.placement = "h",
           
@@ -289,22 +289,78 @@ Interestingly, adding the controls nearly nullifies the mother's effect on her c
 
 Despite the lack of statistical significance in the effect of mother's education on financial outcome, models 3 and 4 show a very large and statistically significant association between mother's education and child's education outcome. This effect is not only large in magnitude, but also has a p value of less than 0.01. In model 4, when father's education is added as a control, the magnitude of the mother's effect decreases, but it is still quite large and equally statistically significant. Notably, in model 4 like in model 2, a father's absence leads to a large negative impact on the child's outcome. 
 
-```{r direct_effect, warning = FALSE}
+```{r semi_direct_effect, warning = FALSE}
 
-# plot m2.5 using child's year of schooling on the y axis
 
-augment(m2.5) %>%
-  ggplot(aes(x = hgc_mother_1979, y = .fitted))+
+mean_faminc_1979 <- dataset2 %>% 
+  filter(!is.na(faminc_1979)) %>% 
+  summarise(mean = mean(faminc_1979))
+
+# creating the visual graphic for model 2.5 which finds direct effect of
+# mother's edu accounting for mediators such as father's edu (assortive mating),
+# missing father edu, sex, and fam income in 1979.
+
+newdata <- expand.grid(hgc_mother_1979 = 0:20,
+                       hgc_father_1979 = 16,
+                       
+                       # father's edu is 16 years, or college.
+                       
+                       dadedu_na = 0,
+                       
+                       # Dad's edu is not missing.
+                       
+                       faminc_1979 = 17432,
+                       
+                       # average income from the sample.
+                       
+                       sex_1979 = 0:1)
+
+# because of the controls, I must use expand.grid() and predict() to graph the
+# model's relationship.
+
+newdata_augmented <- predict(m2.5, newdata, interval = "confidence") %>%
+  as.data.frame() %>% 
+  bind_cols(newdata, .) %>% 
+  mutate(sex = case_when(sex_1979 == 0 ~ "Men",
+                         sex_1979 == 1 ~ "Women"))
+
+ggplot(newdata_augmented, aes(x = hgc_mother_1979, y = fit)) +
   geom_line() +
-  xlim(0, 20) +
-  geom_ribbon(aes(ymin = .fitted - 1.96 * .se.fit,
-                  ymax = .fitted + 1.96 * .se.fit),
+  
+  # geom_line(aes(colour = sex), show.legend = TRUE)
+  # scale_colour_manual(values = ifelse(newdata_augmented$sex == "Men", "blue", "red")) +
+  
+  geom_ribbon(aes(ymin = lwr,
+                  ymax = upr),
               alpha = 0.3) +
-  labs(title = "Figure 2: Direct Effect of Mother's Education",
+  facet_grid(~sex) +
+  xlim(0,20) +
+  scale_color_discrete("") +
+  scale_fill_discrete("") +
+  labs(title = "Figure 2: Direct Effect of Mother's Education on Child's Educational Outcome",
        subtitle = "Mediated by Sex, Family Income, and Father's Education",
        x = "Mother's Edu in 1979",
        y = "Predicted Child's Edu by Age 25") +
   theme_classic()
+
+
+
+
+# previously trying to plot m2.5 using child's year of schooling on the y axis,
+# but that didn't work.
+
+# augment(m2.5) %>%
+#  ggplot(aes(x = hgc_mother_1979, y = .fitted))+
+#  geom_line() +
+#  xlim(0, 20) +
+#  geom_ribbon(aes(ymin = .fitted - 1.96 * .se.fit,
+#                  ymax = .fitted + 1.96 * .se.fit),
+#              alpha = 0.3) +
+#  labs(title = "Figure 2: Direct Effect of Mother's Education",
+#       subtitle = "Mediated by Sex, Family Income, and Father's Education",
+#       x = "Mother's Edu in 1979",
+#       y = "Predicted Child's Edu by Age 25") +
+#  theme_classic()
 
 ```
 
